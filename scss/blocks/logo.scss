@@ -1,0 +1,63 @@
+/**
+* Block Stylesheet: logo
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.logo {
+  position:relative;
+  z-index:$layer-top;
+  background:$bg-color;
+  .logo__link {
+    display:table-cell;
+    vertical-align:middle;
+    height:50px;
+  }
+  .logo__image {
+    width:155px;
+  }
+  .logo__copy {
+    @include text-replace;
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .logo {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .logo {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .logo {
+  }
+
+}
