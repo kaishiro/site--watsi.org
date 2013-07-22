@@ -1,0 +1,29 @@
+/* line 27, ../scss/global.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 36, ../scss/global.scss */
+html {
+  overflow: -moz-scrollbars-vertical;
+  -ms-overflow-y: scroll;
+  overflow-y: scroll;
+}
+
+/* line 61, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 87.5%;
+}
+
+/* line 64, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 14px;
+  line-height: 1.14286em;
+}
+
+/* line 52, ../scss/global.scss */
+body {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}

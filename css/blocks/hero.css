@@ -1,0 +1,48 @@
+/* line 18, ../../scss/blocks/hero.scss */
+.hero {
+  margin-top: 10px;
+}
+/* line 20, ../../scss/blocks/hero.scss */
+.hero .hero__heading {
+  font-family: "MisoLight", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1.14286em;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 26, ../../scss/blocks/hero.scss */
+.hero .hero__subheading {
+  font-family: "MisoLight", Helvetica, Arial, sans-serif;
+  font-size: 1.28571em;
+  line-height: 1.77778em;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 32, ../../scss/blocks/hero.scss */
+.hero .hero__cta {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background: #ff645c;
+  margin-top: 10px;
+}
+/* line 51, ../../scss/_mixins.scss */
+.hero .hero__cta:hover {
+  background: #ec5e5e;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 47, ../../scss/blocks/hero.scss */
+  .hero--teethy {
+    background: url("/img/hero--teethy.jpg");
+  }
+}

@@ -1,0 +1,7 @@
+/* line 18, ../../scss/blocks/header.scss */
+.header {
+  -webkit-box-shadow: 0 1px 1px 0 #d8d8d8;
+  -moz-box-shadow: 0 1px 1px 0 #d8d8d8;
+  box-shadow: 0 1px 1px 0 #d8d8d8;
+  background: white;
+}

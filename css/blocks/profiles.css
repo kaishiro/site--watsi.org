@@ -1,0 +1,15 @@
+/* line 18, ../../scss/blocks/profiles.scss */
+.profiles {
+  margin-top: 10px;
+}
+/* line 20, ../../scss/blocks/profiles.scss */
+.profiles .profiles__heading {
+  float: left;
+  margin: 10px 0;
+  width: 100%;
+}
+/* line 25, ../../scss/blocks/profiles.scss */
+.profiles .profiles__listing {
+  float: left;
+  width: 100%;
+}
