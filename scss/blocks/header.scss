@@ -1,0 +1,51 @@
+/**
+* Block Stylesheet: header
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.header {
+  @include shadow-divider;
+  background:$bg-color;
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .header {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .header {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .header {
+  }
+
+}
