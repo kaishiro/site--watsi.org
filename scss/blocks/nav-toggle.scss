@@ -1,0 +1,56 @@
+/**
+* Block Stylesheet: nav-toggle
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.nav-toggle {
+  position:absolute;
+  right:10px;
+  font-size:30px;
+  line-height:50px;
+  z-index:$layer-top;
+  cursor:pointer;
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .nav-toggle {
+    display:none;
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .nav-toggle {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .nav-toggle {
+  }
+
+}
