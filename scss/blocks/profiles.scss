@@ -1,0 +1,60 @@
+/**
+* Block Stylesheet: profiles
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.profiles {
+  margin-top:10px;
+  .profiles__heading { 
+    float:left;
+    margin:10px 0;
+    width:100%;
+  }
+  .profiles__listing {
+    float:left;
+    width:100%;
+  }
+}
+
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .profiles {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .profiles {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .profiles {
+  }
+
+}

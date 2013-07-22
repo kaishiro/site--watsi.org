@@ -1,0 +1,57 @@
+/**
+* Block Stylesheet: profile
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.profile {
+  margin-top:10px;
+  @include border-radius(4px);
+  border:1px solid $border-color;
+  @include shadow-subtle;
+  background:$bg-color;
+  width:300px;
+  margin:0 auto;
+}
+
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .profile {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .profile {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .profile {
+  }
+
+}
