@@ -1,0 +1,54 @@
+/**
+* Global Stylesheet
+*
+* Maintains all site-wide styles 
+* 
+* This stylesheet contains sane global defaults (border-box, forced
+* vertical scrollbars, etc.), as well as any block agnostic site-wide styling.
+* Ideally, this would be the singular stylesheet which targets DOM level elements
+* as opposed to classes.
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-05-14
+* @lastmodified   2013-05-14 17:34
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Border-Box Layout Model
+*
+* @see http://paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+* {
+  @include box-sizing(border-box);
+}
+
+/**
+* Force Vertical Scrollbar
+*
+* @see  http://stackoverflow.com/questions/1800670/moz-scrollbars-vertical-equivalent-for-chrome-opera-safari 
+*/
+html {
+  overflow: -moz-scrollbars-vertical;
+  -ms-overflow-y: scroll;
+  overflow-y: scroll;
+}
+
+/**
+* Typography
+*
+* @see http://compass-style.org/reference/compass/typography/vertical_rhythm/ 
+*/
+@include establish-baseline;
+
+/**
+* Global Styles
+*/
+body {
+  font-family:$body-font;
+}
