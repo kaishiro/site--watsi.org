@@ -1,0 +1,71 @@
+/**
+* Block Stylesheet: nav
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.nav {
+  @include transition-property(margin-top);
+  @include transition-duration(1s);
+  margin-top:-100%;
+  position:relative;
+  z-index:$layer-middle;
+  .nav__item {
+    float:left;
+    width:100%;
+  }
+  .nav__link {
+    display:block;
+    width:100%;
+    padding:10px 0;
+    text-align:center;
+    text-transform:capitalize;
+    text-decoration:none;
+    color:$link-color;
+  }
+}
+
+.nav--open {
+  margin-top:0;
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .nav {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .nav {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .nav {
+  }
+
+}
