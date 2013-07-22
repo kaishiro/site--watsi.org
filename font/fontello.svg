@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2012 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="heart" unicode="&#xe801;" d="M500-79q-15 0-25 10l-348 336q-6 4-15 15t-31 37-38 54-30 68-13 77q0 123 71 192t196 69q35 0 71-12t67-32 53-38 42-38q20 20 42 38t53 38 67 32 71 12q125 0 196-69t71-192q0-123-128-251l-348-335q-10-10-25-10z" horiz-adv-x="1000" />
+<glyph glyph-name="up" unicode="&#xe802;" d="M660 336l-192 0 0-350-276 0 0 350-192 0 330 380z" horiz-adv-x="660" />
+<glyph glyph-name="person" unicode="&#xe803;" d="M0 238l0 275q0 70 47 96 18 8 41 8l207 0q23 0 43-8 59-29 59-96l0-275q-4-31-30-28t-28 28l0 262q-2 10-18 8t-16-8l0-600q-4-27-25-36t-42 4-21 34l0 365q-4 18-21 15t-18-15l0-365q-2-29-24-38t-42 3-21 33l0 600q-4 10-18 8t-16-8l0-262q-4-31-30-28t-26 28z m102 505q0 40 28 68t68 28 68-28 28-68-28-68-68-28-68 28-28 68z" horiz-adv-x="396" />
+<glyph glyph-name="menu" unicode="&#xe800;" d="M857 100l0-71q0-15-11-25t-25-11l-786 0q-15 0-25 11t-11 25l0 71q0 15 11 25t25 11l786 0q15 0 25-11t11-25z m0 286l0-71q0-15-11-25t-25-11l-786 0q-15 0-25 11t-11 25l0 71q0 15 11 25t25 11l786 0q15 0 25-11t11-25z m0 286l0-71q0-15-11-25t-25-11l-786 0q-15 0-25 11t-11 25l0 71q0 15 11 25t25 11l786 0q15 0 25-11t11-25z" horiz-adv-x="857.143" />
+<glyph glyph-name="twitter-squared" unicode="&#xe805;" d="M714 510q-31-14-68-19 38 22 52 65-36-21-75-28-34 37-85 37-49 0-83-34t-34-83q0-16 3-27-72 4-135 36t-107 86q-16-28-16-59 0-64 51-98-26 1-56 15l0-1q0-42 28-74t69-40q-16-4-28-4-7 0-22 2 12-35 42-58t68-23q-65-50-146-50-15 0-28 2 83-52 180-52 62 0 117 20t94 53 67 76 42 90 14 94q0 10-1 15 35 25 59 61z m143 108l0-536q0-66-47-114t-114-47l-536 0q-66 0-114 47t-47 114l0 536q0 66 47 114t114 47l536 0q66 0 114-47t47-114z" horiz-adv-x="857.143" />
+<glyph glyph-name="facebook-squared" unicode="&#xe806;" d="M729 338l13 122-110 0 0 61q0 27 9 38t40 11l61 0 0 122-98 0q-85 0-122-40t-37-119l0-73-73 0 0-122 73 0 0-354 146 0 0 354 98 0z m128 280l0-536q0-66-47-114t-114-47l-536 0q-66 0-114 47t-47 114l0 536q0 66 47 114t114 47l536 0q66 0 114-47t47-114z" horiz-adv-x="857.143" />
+</font>
+</defs>
+</svg>
