@@ -1,0 +1,51 @@
+/**
+* Block Stylesheet: page
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.page {
+  background:$bg-alt-color;
+  border-top:7px solid $border-alt-color;
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .page {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .page {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .page {
+  }
+
+}
