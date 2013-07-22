@@ -1,0 +1,109 @@
+/**
+* Grid Stylesheet
+*
+* Defines all Zen Grid based layouts 
+* 
+* This stylesheet contains the default Zen Grid container layout, as well as 
+* all progressive width-based grid layouts. All blocks should be positioned
+* via this global stylesheet - NOT on their respective block stylesheets.
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-05-14
+* @lastmodified   2013-05-14 17:58
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Zen Grid Settings (Mobile) 
+*/
+
+/** Variables */
+$zen-column-count: 1;
+$zen-gutter-width: 20px;
+
+/** Containers */
+.header,
+.body,
+.footer {
+  @include zen-grid-container;
+}
+
+/** Blocks */
+.color-bar {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.logo {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.nav--primary {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.hero {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.profiles {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+
+/**
+* Zen Grid Settings (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+ 
+  /** Variables */ 
+  $zen-column-count: 16;
+  $zen-gutter-width: 10px;
+ 
+  /** Containers */
+  .page__header,
+  .page__body,
+  .page__footer {
+  }
+
+  /** Blocks */ 
+
+}
+
+/**
+* Zen Grid Settings (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+ 
+  /** Variables */ 
+ 
+  /** Containers */
+  .page__header,
+  .page__body,
+  .page__footer {
+  }
+
+  /** Blocks */ 
+
+}
+
+/**
+* Zen Grid Settings (XL)
+*/
+@media screen and (min-width: $width-xl) {
+ 
+  /** Variables */ 
+ 
+  /** Containers */
+  .page__header,
+  .page__body,
+  .page__footer {
+  }
+
+  /** Blocks */ 
+
+}
