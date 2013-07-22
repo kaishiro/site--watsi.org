@@ -1,0 +1,91 @@
+/**
+* Variables Partial
+*
+* Standard variables partial for base inclusion. 
+* 
+* This partial contains standard variable declarations for SASS, Compass, and 
+* Zen Grids. All variables are to be maintained here unless contextually 
+* inappropriate.
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-05-14
+* @lastmodified   2013-05-14 17:00
+* @todo           Change $box-sizing-polyfill-path to an absolute server-side
+*                 path on production
+*/
+
+/**
+* Compass Variables
+*/
+$base-font-size: 14px;
+$base-line-height: 16px;
+
+/**
+* Zen Grids Variables
+*/
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1024px;
+$width-xl: 1280px;
+$box-sizing-polyfill-path: "https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc";
+
+/**
+* Z-Index Variables
+*/
+$layer-overlay: 500;
+$layer-mask: 400;
+$layer-top: 300;
+$layer-middle: 200;
+$layer-bottom: 100;
+
+/**
+* Color Variables (Descriptive)
+*
+* Lower values indicate lighter shades.  Higher values indicate darker shades.
+*/
+$color-white: #FFFFFF;  /* 255,255,255 */
+$color-black: #000000;  /* 0,0,0 */
+$color-grey1: #F8F8F8;  /* 248,248,248 */
+$color-grey2: #E5E5E5;  /* 229,229,229 */
+$color-grey3: #D8D8D8;  /* 216,216,216 */
+$color-grey4: #686868;  /* 104,104,104 */
+$color-grey5: #404040;  /* 64,64,64 */
+$color-blue1: #197AD0;  /* 25,122,208 */
+$color-blue2: #2D82D4;  /* 45,130,212 */
+$color-blue3: #166CB9;  /* 22,108,185 */
+$color-blue4: #0088CC;  /* 0,136,204  */
+$color-blue5: #005580;  /* 0,85,128 */
+$color-red1: #FF645C; /* 255,100,92 */
+$color-red2: #EC5E5E; /* 236,94,94 */
+
+/**
+* Color Variables (Functional)
+*/
+$text-color: $color-grey4;
+$bg-color: $color-white;
+$bg-alt-color: $color-grey1;
+$link-color: $color-grey4;
+$link-hover-color: darken($color-grey4, 10%);
+$link-alt-color: $color-blue1;
+$link-alt-hover-color: darken($color-blue1, 10%);
+$link-active-color: $color-blue1;
+$link-active-hover-color: darken($color-blue1, 10%);
+$border-color: $color-grey3;
+$border-alt-color: $color-blue1;
+$shadow-color: $color-grey3;
+$button-red-color: $color-red1;
+$button-red-hover-color: $color-red2;
+$button-text-color: $color-white;
+
+/**
+* Font Variables (Descriptive)
+*/
+$font-misolight: 'MisoLight', Helvetica, Arial, sans-serif;
+$font-ptsans: 'PT Sans', Helvetica, Arial, sans-serif;
+
+/**
+* Font Variables (Functional)
+*/
+$body-font: $font-ptsans;
+$heading-font: $font-misolight;

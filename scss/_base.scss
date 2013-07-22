@@ -1,0 +1,17 @@
+/**
+* Base Partial
+*
+* Standard base partial for stylesheet inclusion.
+* 
+* This partial contains base includes for use with all stylesheets dependent on
+* Compass, Zen Grids, or any project specific variables.
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-05-14
+* @lastmodified   2013-05-15 12:12
+*/
+@import 'vars';
+@import 'mixins';
+@import 'compass';
+@import 'zen';
