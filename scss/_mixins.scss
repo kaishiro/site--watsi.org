@@ -11,7 +11,6 @@
   text-indent:100%;
   white-space:nowrap;
   overflow:hidden;
-  float:right;
 }
 
 @mixin shadow-divider {
@@ -36,19 +35,29 @@
 
 @mixin button {
   @include border-radius(4px);
-  color: $button-text-color;
   text-decoration:none;
   text-align:center;
   font-size:16px;
   height:40px;
   line-height:40px;
   display:block;
+  cursor:pointer;
 }
 
 @mixin button-red {
   @include button;
   background:$button-red-color;
+  color: $button-red-text-color;
   &:hover {
     background:$button-red-hover-color;
+  }
+}
+
+@mixin button-blue {
+  @include button;
+  background:$button-blue-color;
+  color: $button-blue-text-color;
+  &:hover {
+    background:$button-blue-hover-color;
   }
 }
