@@ -18,8 +18,8 @@
 /**
 * Compass Variables
 */
-$base-font-size: 14px;
-$base-line-height: 16px;
+$base-font-size: 16px;
+$base-line-height: 20px;
 
 /**
 * Zen Grids Variables
@@ -72,11 +72,17 @@ $link-alt-hover-color: darken($color-blue1, 10%);
 $link-active-color: $color-blue1;
 $link-active-hover-color: darken($color-blue1, 10%);
 $border-color: $color-grey3;
+$border-light-color: lighten($color-grey3, 5%);
 $border-alt-color: $color-blue1;
 $shadow-color: $color-grey3;
 $button-red-color: $color-red1;
 $button-red-hover-color: $color-red2;
-$button-text-color: $color-white;
+$button-red-text-color: $color-white;
+$button-blue-color: $color-blue3;
+$button-blue-hover-color: darken($color-blue3, 5%);
+$button-blue-text-color: $color-white;
+$progress-bar-bg-color: $color-grey2;
+$progress-bar-color: $color-red1;
 
 /**
 * Font Variables (Descriptive)
