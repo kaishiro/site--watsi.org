@@ -1,0 +1,65 @@
+/**
+* Block Stylesheet: progress
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.progress {
+  display:block;
+  .progress__info {
+    text-align:center;
+    @include adjust-font-size-to(15px);
+  }
+  .progress__remaining {
+  }
+  .progress__donors {
+    &:before {
+      content:' | ';
+    }
+  }
+  .progress__meter {
+    margin-top:10px
+  }
+}
+
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .progress {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .progress {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .progress {
+  }
+
+}

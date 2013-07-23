@@ -1,0 +1,59 @@
+/**
+* Block Stylesheet: progress-bar
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           2013-07-21
+* @lastmodified   2013-07-21 11:41
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.progress-bar {
+  width:100%;
+  height:20px;
+  background:$progress-bar-bg-color;
+  @include border-radius(4px);
+  overflow:hidden;
+  .progress-bar__fill {
+    height:20px;
+    background:$progress-bar-color;
+  }
+}
+
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .progress-bar {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .progress-bar {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .progress-bar {
+  }
+
+}
