@@ -16,6 +16,14 @@
 * Block Styling (Mobile)
 */
 .nav {
+  .nav__item {
+  }
+  .nav__link {
+    display:block;
+  }
+}
+
+.nav--primary {
   @include transition-property(margin-top);
   @include transition-duration(1s);
   margin-top:-100%;
@@ -26,18 +34,54 @@
     width:100%;
   }
   .nav__link {
-    display:block;
     width:100%;
     padding:10px 0;
     text-align:center;
     text-transform:capitalize;
-    text-decoration:none;
     color:$link-color;
+  }
+  &.nav--open {
+    margin-top:0;
   }
 }
 
-.nav--open {
-  margin-top:0;
+.nav--info {
+  padding-top:20px;
+  padding-bottom:20px;
+  border-bottom:1px solid $border-light-color;
+  .nav__heading {
+    font-family:$heading-font;
+    @include adjust-font-size-to(26px);
+    text-align:center;
+  }
+  .nav__item {
+    background:url('/img/sprite.png');
+    height:189px;
+    width:189px;
+    margin:20px auto 0;
+    @include text-replace;
+  }
+  .nav__item--how {
+    background-position:-385px -2px;
+    &:hover {
+      background-position:-385px -269px;
+    }
+  }
+  .nav__item--blog {
+    background-position:0px -2px;
+    &:hover {
+      background-position:0px -269px;
+    }
+  }
+  .nav__item--connect {
+    background-position:-192px -2px;
+    &:hover {
+      background-position:-192px -269px;
+    }
+  }
+  .nav__link {
+    height:100%;
+  }
 }
 
 /**
