@@ -1,0 +1,71 @@
+/**
+* Block Stylesheet: mailing-list
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.mailing-list {
+  @include adjust-font-size-to(14px);
+  padding-top:20px;
+  border-bottom:1px solid $border-color;
+  padding-bottom:20px;
+  .mailing-list__heading {
+  }
+  .mailing-list__input {
+    margin-top:10px;
+    width:75%;
+    float:left;
+    height:40px;
+    line-height:40px;
+    border:none;
+    padding:2px 10px;
+  }
+  .mailing-list__submit {
+    margin-top:10px;
+    width:25%;
+    float:left;
+    @include button-blue('square');
+    font-size:14px;
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .mailing-list {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .mailing-list {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .mailing-list {
+  }
+
+}
