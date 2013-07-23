@@ -17,6 +17,8 @@
 */
 .hero {
   margin-top:10px;
+  padding-bottom:25px;
+  border-bottom:1px solid $border-light-color;
   .hero__heading {
     font-family:$heading-font;
     @include adjust-font-size-to(28px);
