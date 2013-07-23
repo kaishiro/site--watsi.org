@@ -34,10 +34,6 @@ $zen-gutter-width: 20px;
 }
 
 /** Blocks */
-.color-bar {
-  @include zen-grid-item(1, 1);
-  @include zen-clear();
-}
 .logo {
   @include zen-grid-item(1, 1);
   @include zen-clear();
@@ -51,6 +47,10 @@ $zen-gutter-width: 20px;
   @include zen-clear();
 }
 .profiles {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.nav--info {
   @include zen-grid-item(1, 1);
   @include zen-clear();
 }
