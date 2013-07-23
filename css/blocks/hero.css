@@ -1,38 +1,41 @@
 /* line 18, ../../scss/blocks/hero.scss */
 .hero {
   margin-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
-/* line 20, ../../scss/blocks/hero.scss */
+/* line 22, ../../scss/blocks/hero.scss */
 .hero .hero__heading {
   font-family: "MisoLight", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  line-height: 1.14286em;
+  font-size: 1.75em;
+  line-height: 1.42857em;
   margin-top: 10px;
   text-align: center;
 }
-/* line 26, ../../scss/blocks/hero.scss */
+/* line 28, ../../scss/blocks/hero.scss */
 .hero .hero__subheading {
   font-family: "MisoLight", Helvetica, Arial, sans-serif;
-  font-size: 1.28571em;
-  line-height: 1.77778em;
+  font-size: 1.125em;
+  line-height: 2.22222em;
   margin-top: 10px;
   text-align: center;
 }
-/* line 32, ../../scss/blocks/hero.scss */
+/* line 34, ../../scss/blocks/hero.scss */
 .hero .hero__cta {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  color: white;
   text-decoration: none;
   text-align: center;
   font-size: 16px;
   height: 40px;
   line-height: 40px;
   display: block;
+  cursor: pointer;
   background: #ff645c;
+  color: white;
   margin-top: 10px;
 }
 /* line 51, ../../scss/_mixins.scss */
@@ -41,7 +44,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 47, ../../scss/blocks/hero.scss */
+  /* line 49, ../../scss/blocks/hero.scss */
   .hero--teethy {
     background: url("/img/hero--teethy.jpg");
   }

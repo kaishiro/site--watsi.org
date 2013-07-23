@@ -1,0 +1,18 @@
+/* line 18, ../../scss/blocks/progress-bar.scss */
+.progress {
+  display: block;
+}
+/* line 20, ../../scss/blocks/progress-bar.scss */
+.progress .progress__info {
+  text-align: center;
+  font-size: 0.9375em;
+  line-height: 1.33333em;
+}
+/* line 27, ../../scss/blocks/progress-bar.scss */
+.progress .progress__donors:before {
+  content: ' | ';
+}
+/* line 31, ../../scss/blocks/progress-bar.scss */
+.progress .progress__meter {
+  margin-top: 10px;
+}

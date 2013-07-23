@@ -1,5 +1,10 @@
-/* line 18, ../../scss/blocks/nav.scss */
-.nav {
+/* line 21, ../../scss/blocks/nav.scss */
+.nav .nav__link {
+  display: block;
+}
+
+/* line 26, ../../scss/blocks/nav.scss */
+.nav--primary {
   -webkit-transition-property: margin-top;
   -moz-transition-property: margin-top;
   -o-transition-property: margin-top;
@@ -12,23 +17,72 @@
   position: relative;
   z-index: 200;
 }
-/* line 24, ../../scss/blocks/nav.scss */
-.nav .nav__item {
+/* line 32, ../../scss/blocks/nav.scss */
+.nav--primary .nav__item {
   float: left;
   width: 100%;
 }
-/* line 28, ../../scss/blocks/nav.scss */
-.nav .nav__link {
-  display: block;
+/* line 36, ../../scss/blocks/nav.scss */
+.nav--primary .nav__link {
   width: 100%;
   padding: 10px 0;
   text-align: center;
   text-transform: capitalize;
-  text-decoration: none;
   color: #686868;
 }
-
-/* line 39, ../../scss/blocks/nav.scss */
-.nav--open {
+/* line 43, ../../scss/blocks/nav.scss */
+.nav--primary.nav--open {
   margin-top: 0;
+}
+
+/* line 48, ../../scss/blocks/nav.scss */
+.nav--info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 52, ../../scss/blocks/nav.scss */
+.nav--info .nav__heading {
+  font-family: "MisoLight", Helvetica, Arial, sans-serif;
+  font-size: 1.625em;
+  line-height: 1.53846em;
+  text-align: center;
+}
+/* line 57, ../../scss/blocks/nav.scss */
+.nav--info .nav__item {
+  background: url("/img/sprite.png");
+  height: 189px;
+  width: 189px;
+  margin: 20px auto 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 64, ../../scss/blocks/nav.scss */
+.nav--info .nav__item--how {
+  background-position: -385px -2px;
+}
+/* line 66, ../../scss/blocks/nav.scss */
+.nav--info .nav__item--how:hover {
+  background-position: -385px -269px;
+}
+/* line 70, ../../scss/blocks/nav.scss */
+.nav--info .nav__item--blog {
+  background-position: 0px -2px;
+}
+/* line 72, ../../scss/blocks/nav.scss */
+.nav--info .nav__item--blog:hover {
+  background-position: 0px -269px;
+}
+/* line 76, ../../scss/blocks/nav.scss */
+.nav--info .nav__item--connect {
+  background-position: -192px -2px;
+}
+/* line 78, ../../scss/blocks/nav.scss */
+.nav--info .nav__item--connect:hover {
+  background-position: -192px -269px;
+}
+/* line 82, ../../scss/blocks/nav.scss */
+.nav--info .nav__link {
+  height: 100%;
 }

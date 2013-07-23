@@ -1,15 +1,28 @@
 /* line 18, ../../scss/blocks/profiles.scss */
 .profiles {
-  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
-/* line 20, ../../scss/blocks/profiles.scss */
+/* line 22, ../../scss/blocks/profiles.scss */
 .profiles .profiles__heading {
-  float: left;
-  margin: 10px 0;
+  margin: 0 auto 20px;
+  width: 300px;
+  font-size: 0.9375em;
+  line-height: 1.33333em;
+}
+/* line 27, ../../scss/blocks/profiles.scss */
+.profiles .profiles__body {
   width: 100%;
 }
-/* line 25, ../../scss/blocks/profiles.scss */
-.profiles .profiles__listing {
-  float: left;
-  width: 100%;
+/* line 30, ../../scss/blocks/profiles.scss */
+.profiles .profiles__footer {
+  width: 300px;
+  text-align: right;
+  margin: 20px auto 0;
+}
+/* line 35, ../../scss/blocks/profiles.scss */
+.profiles .profiles__link {
+  font-size: 0.9375em;
+  line-height: 1.33333em;
 }

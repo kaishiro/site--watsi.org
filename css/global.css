@@ -14,16 +14,28 @@ html {
 
 /* line 61, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
-  font-size: 87.5%;
+  font-size: 100%;
 }
 
 /* line 64, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 14px;
-  line-height: 1.14286em;
+  font-size: 16px;
+  line-height: 1.25em;
 }
 
 /* line 52, ../scss/global.scss */
 body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #686868;
+}
+
+/* line 57, ../scss/global.scss */
+a {
+  text-decoration: none;
+  color: #197ad0;
+}
+/* line 60, ../scss/global.scss */
+a:hover {
+  color: #145fa2;
+  text-decoration: underline;
 }
