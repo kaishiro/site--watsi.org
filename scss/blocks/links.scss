@@ -1,0 +1,60 @@
+/**
+* Block Stylesheet: links
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.links {
+  @include adjust-font-size-to(14px, 1.4);
+  .links__item--privacy {
+    float:left;
+  }
+  .links__item--terms {
+    float:left;
+    margin-left:5px;
+    &:before {
+      content:"|";
+    }
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .links {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .links {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .links {
+  }
+
+}
