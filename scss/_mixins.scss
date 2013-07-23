@@ -34,7 +34,6 @@
 }
 
 @mixin button {
-  @include border-radius(4px);
   text-decoration:none;
   text-align:center;
   font-size:16px;
@@ -42,9 +41,15 @@
   line-height:40px;
   display:block;
   cursor:pointer;
+  border:none;
 }
 
-@mixin button-red {
+@mixin button-red($type: 'rounded') {
+  @if $type == 'rounded' {
+    @include border-radius(4px);
+  }
+  @if $type == 'square' {
+  }
   @include button;
   background:$button-red-color;
   color: $button-red-text-color;
@@ -53,7 +58,12 @@
   }
 }
 
-@mixin button-blue {
+@mixin button-blue($type: 'rounded') {
+  @if $type == 'rounded' {
+    @include border-radius(4px);
+  }
+  @if $type == 'square' {
+  }
   @include button;
   background:$button-blue-color;
   color: $button-blue-text-color;
