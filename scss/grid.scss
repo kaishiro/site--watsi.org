@@ -54,6 +54,26 @@ $zen-gutter-width: 20px;
   @include zen-grid-item(1, 1);
   @include zen-clear();
 }
+.press {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.nav--about {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.mailing-list {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.copyright {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.links {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
 
 /**
 * Zen Grid Settings (Tablet)
