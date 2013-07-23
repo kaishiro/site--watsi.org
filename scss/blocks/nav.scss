@@ -84,6 +84,27 @@
   }
 }
 
+.nav--about {
+  @include micro-clearfix;
+  @include adjust-font-size-to(14px);
+  border-bottom:1px solid $border-color;
+  padding-bottom:20px;
+  .nav__list {
+  }
+  .nav__item {
+    float:left;
+    width:50%;
+    margin-top:10px;
+  }
+  .nav__link {
+    color:$link-color;
+    &:before {
+      content:"» ";
+      @include adjust-font-size-to(12px);
+    }
+  }
+}
+
 /**
 * Block Styling (Tablet)
 */
