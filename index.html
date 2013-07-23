@@ -30,7 +30,7 @@
   <!-- Style: Fontello -->
   <link rel="stylesheet" href="/css/fontello.css">
   <link rel="stylesheet" href="/css/misolight.css">
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'> 
+  <!--<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>--> 
 
   <!-- Style: Blocks -->
   <link rel="stylesheet" href="/css/blocks/page.css">
@@ -42,6 +42,8 @@
   <link rel="stylesheet" href="/css/blocks/hero.css">
   <link rel="stylesheet" href="/css/blocks/profiles.css">
   <link rel="stylesheet" href="/css/blocks/profile.css">
+  <link rel="stylesheet" href="/css/blocks/progress.css">
+  <link rel="stylesheet" href="/css/blocks/progress-bar.css">
 
   <!-- Script: Modernizr --> 
   <script src="/js/vendor/html5shiv.js"></script>
@@ -109,24 +111,119 @@
         New Patients
       </header>
   
-      <div class="profiles__listing">
+      <div class="profiles__body">
 
         <article class="profile" itemscope itemtype="http://schema.org/Person">
           <header class="profile__heading">
             <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
-          </header>
-          <div class="profile__body">
-            <a class="profile__link">
+            <a class="profile__link" href="/profile/ab4b0095f403-rahel">
               <img class="profile__image" itemprop="image" src="/img/badge_Rahel-Site-Photo.jpg" />
             </a>
+          </header>
+          <div class="profile__body">
+            <div class="profile__progress progress">
+              <div class="progress__info">
+                <span class="progress__remaining">$195 To Go</span>
+                <span class="progress__donors">8 Donors</span>
+              </div>
+              <div class="progress__meter progress-bar">
+                <div class="progress-bar__fill" style="width:32%;"></div>
+              </div>
+            </div>
+            <p class="profile__copy" itemprop="description">
+              <span itemprop="givenName">Rahel</span> is the oldest of four children and lives with her family in Tanzania. She helps her mother around the house while her father works as a security guard to support their ...
+            </p>
           </div>
           <footer class="profile__footer">
+            <a class="profile__cta" itemprop="url" href="/profile/ab4b0095f403-rahel">
+              Read More
+            </a>
+          </footer>
+        </article>
+        
+        <article class="profile" itemscope itemtype="http://schema.org/Person">
+          <header class="profile__heading">
+            <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
+            <a class="profile__link" href="/profile/3947121e4eea-reaska">
+              <img class="profile__image" itemprop="image" src="/img/badge_Reaska-Site-Photo.jpg" />
+            </a>
+          </header>
+          <div class="profile__body">
+            <div class="profile__progress progress">
+              <div class="progress__info">
+                <span class="progress__remaining">$215 To Go</span>
+                <span class="progress__donors">4 Donors</span>
+              </div>
+              <div class="progress__meter progress-bar">
+                <div class="progress-bar__fill" style="width:92%;"></div>
+              </div>
+            </div>
+            <p class="profile__copy" itemprop="description">
+              15-year-old <span itemprop="givenName">Reaska</span> is an ambitious teenager from Cambodia who enjoys reading in his free time. Six weeks ago, Reasksa was in a motorbike accident and broke his arm. Reaska ...
+            </p>
+          </div>
+          <footer class="profile__footer">
+            <a class="profile__cta" itemprop="url" href="/profile/3947121e4eea-reaska">
+              Read More
+            </a>
+          </footer>
+        </article>
+        
+        <article class="profile" itemscope itemtype="http://schema.org/Person">
+          <header class="profile__heading">
+            <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
+            <a class="profile__link" href="/profile/c2561a4f3817-edith">
+              <img class="profile__image" itemprop="image" src="/img/badge_Edith-Site-Photo.jpg" />
+            </a>
+          </header>
+          <div class="profile__body">
+            <div class="profile__progress progress">
+              <div class="progress__info">
+                <span class="progress__remaining">$150 To Go</span>
+                <span class="progress__donors">0 Donors</span>
+              </div>
+              <div class="progress__meter progress-bar">
+                <div class="progress-bar__fill" style="width:0%;"></div>
+              </div>
+            </div>
+            <p class="profile__copy" itemprop="description">
+              <span itemprop="givenName">Edith</span> is preparing to welcome her second child into the world, but in Kenya where she lives, most expecting mothers lack access to basic maternal care. 90% of maternal deaths oc...
+            </p>
+          </div>
+          <footer class="profile__footer">
+            <a class="profile__cta" itemprop="url" href="/profile/c2561a4f3817-edith">
+              Read More
+            </a>
           </footer>
         </article>
       
       </div>
 
+      <footer class="profiles__footer">
+        <a class="profiles__link"  href="/fund-treatments">
+          View All Patients
+        </a>
+      </footer>
+
     </section>
+
+    
+    <nav class="nav nav--info">
+      <h3 class="nav__heading">
+        100% of your donation directly funds treatment!
+      </h3>
+      <ul class="nav__list">
+        <li class="nav__item nav__item--how">
+          <a class="nav__link" href="/about#how-watsi-works"><span class="nav__copy">How Watsi Works</span></a>
+        </li>
+        <li class="nav__item nav__item--blog">
+          <a class="nav__link" href="http://blog.watsi.com"><span class="nav__copy">Blog</span></a>
+        </li>
+        <li class="nav__item nav__item--connect">
+          <a class="nav__link" href="/about#get-involved"><span class="nav__copy">Connect With Us</span></a>
+        </li>
+      </ul>
+    </nav>
 
   </div>
 
