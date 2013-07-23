@@ -16,15 +16,24 @@
 * Block Styling (Mobile)
 */
 .profiles {
-  margin-top:10px;
+  padding-bottom:20px;
+  padding-top:20px;
+  border-bottom:1px solid $border-light-color;
   .profiles__heading { 
-    float:left;
-    margin:10px 0;
+    margin:0 auto 20px;
+    width:300px;
+    @include adjust-font-size-to(15px); 
+  }
+  .profiles__body {
     width:100%;
   }
-  .profiles__listing {
-    float:left;
-    width:100%;
+  .profiles__footer {
+    width:300px;
+    text-align:right;
+    margin:20px auto 0;
+  }
+  .profiles__link {
+    @include adjust-font-size-to(15px); 
   }
 }
 

@@ -16,13 +16,41 @@
 * Block Styling (Mobile)
 */
 .profile {
-  margin-top:10px;
+  margin:20px auto 0;
   @include border-radius(4px);
   border:1px solid $border-color;
   @include shadow-subtle;
   background:$bg-color;
   width:300px;
-  margin:0 auto;
+  &:first-child {
+    margin-top:0;
+  }
+  .profile__heading {
+  }
+  .profile__timestamp {
+  }
+  .profile__body {
+    padding:10px 20px 0;
+  }
+  .profile__link {
+    display:block;
+  }
+  .profile__image {
+    width:100%;
+  }
+  .profile__progress {
+  }
+  .profile__copy {
+    margin-top:10px;
+    font-size:15px;
+    line-height:21px;
+  }
+  .profile__footer {
+    padding:10px 20px 20px;
+  }
+  .profile__cta {
+    @include button-blue; 
+  }
 }
 
 
