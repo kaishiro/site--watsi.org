@@ -51,4 +51,14 @@ html {
 */
 body {
   font-family:$body-font;
+  color:$text-color;
+}
+
+a {
+  text-decoration:none;
+  color:$link-alt-color;
+  &:hover {
+    color:$link-alt-hover-color;
+    text-decoration:underline;
+  }
 }
