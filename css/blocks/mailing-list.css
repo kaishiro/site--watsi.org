@@ -1,0 +1,39 @@
+/* line 18, ../../scss/blocks/mailing-list.scss */
+.mailing-list {
+  font-size: 0.875em;
+  line-height: 1.42857em;
+  padding-top: 20px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 20px;
+}
+/* line 25, ../../scss/blocks/mailing-list.scss */
+.mailing-list .mailing-list__input {
+  margin-top: 10px;
+  width: 75%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  padding: 2px 10px;
+}
+/* line 34, ../../scss/blocks/mailing-list.scss */
+.mailing-list .mailing-list__submit {
+  margin-top: 10px;
+  width: 25%;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background: #166cb9;
+  color: white;
+  font-size: 14px;
+}
+/* line 70, ../../scss/_mixins.scss */
+.mailing-list .mailing-list__submit:hover {
+  background: #135fa2;
+}

@@ -1,0 +1,18 @@
+/* line 18, ../../scss/blocks/links.scss */
+.links {
+  font-size: 0.875em;
+  line-height: 2em;
+}
+/* line 20, ../../scss/blocks/links.scss */
+.links .links__item--privacy {
+  float: left;
+}
+/* line 23, ../../scss/blocks/links.scss */
+.links .links__item--terms {
+  float: left;
+  margin-left: 5px;
+}
+/* line 26, ../../scss/blocks/links.scss */
+.links .links__item--terms:before {
+  content: "|";
+}

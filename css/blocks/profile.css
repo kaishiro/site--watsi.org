@@ -53,10 +53,11 @@
   line-height: 40px;
   display: block;
   cursor: pointer;
+  border: none;
   background: #166cb9;
   color: white;
 }
-/* line 60, ../../scss/_mixins.scss */
+/* line 70, ../../scss/_mixins.scss */
 .profile .profile__cta:hover {
   background: #135fa2;
 }

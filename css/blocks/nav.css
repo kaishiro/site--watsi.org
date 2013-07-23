@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 21, ../../scss/blocks/nav.scss */
 .nav .nav__link {
   display: block;
@@ -85,4 +86,38 @@
 /* line 82, ../../scss/blocks/nav.scss */
 .nav--info .nav__link {
   height: 100%;
+}
+
+/* line 87, ../../scss/blocks/nav.scss */
+.nav--about {
+  zoom: 1;
+  font-size: 0.875em;
+  line-height: 1.42857em;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 20px;
+}
+/* line 26, ../../scss/_mixins.scss */
+.nav--about:before, .nav--about:after {
+  content: "";
+  display: table;
+}
+/* line 30, ../../scss/_mixins.scss */
+.nav--about:after {
+  clear: both;
+}
+/* line 94, ../../scss/blocks/nav.scss */
+.nav--about .nav__item {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+}
+/* line 99, ../../scss/blocks/nav.scss */
+.nav--about .nav__link {
+  color: #686868;
+}
+/* line 101, ../../scss/blocks/nav.scss */
+.nav--about .nav__link:before {
+  content: "» ";
+  font-size: 0.75em;
+  line-height: 1.66667em;
 }
