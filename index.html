@@ -24,8 +24,6 @@
   <!-- Style: Global -->
   <link rel="stylesheet" href="/css/global.css">
   
-  <!-- Style: Grid -->
-  <link rel="stylesheet" href="/css/grid.css">
   
   <!-- Style: Fontello -->
   <link rel="stylesheet" href="/css/fontello.css">
@@ -39,6 +37,7 @@
   <link rel="stylesheet" href="/css/blocks/logo.css">
   <link rel="stylesheet" href="/css/blocks/nav.css">
   <link rel="stylesheet" href="/css/blocks/nav-toggle.css">
+  <link rel="stylesheet" href="/css/blocks/body.css">
   <link rel="stylesheet" href="/css/blocks/hero.css">
   <link rel="stylesheet" href="/css/blocks/profiles.css">
   <link rel="stylesheet" href="/css/blocks/profile.css">
@@ -49,6 +48,8 @@
   <link rel="stylesheet" href="/css/blocks/mailing-list.css">
   <link rel="stylesheet" href="/css/blocks/copyright.css">
   <link rel="stylesheet" href="/css/blocks/links.css">
+  <!-- Style: Grid -->
+  <link rel="stylesheet" href="/css/grid.css">
 
   <!-- Script: Modernizr --> 
   <script src="/js/vendor/html5shiv.js"></script>
@@ -59,262 +60,266 @@
 <body class="page">
 
   <header class="header">
+    <div class="header__inner"> 
+      <div class="logo">
+        <a class="logo__link" href="/" title="Watsi">
+          <h1 class="logo__copy">
+            <!--[if gte IE 9]><!-->
+            <img class="logo__image" src="/img/logo.svg" alt="Watsi" />
+            <!--<![endif]-->
+        
+            <!--[if lt IE 9]>
+            <img class="logo__image" src="/img/logo.png" alt="Watsi" />
+            <![endif]--> 
+          </h1>
      
-    <div class="logo">
-      <a class="logo__link" href="/" title="confessions">
-        <!--[if gte IE 9]><!-->
-        <img class="logo__image" src="/img/logo.svg" alt="confessions" />
-        <!--<![endif]-->
-    
-        <!--[if lt IE 9]>
-        <img class="logo__image" src="/img/logo.png" alt="confessions" />
-        <![endif]-->
-    
-        <h1 class="logo__copy">Watsi</h1>
-   
-      </a>
+        </a>
+      </div>
+
+      <div class="nav-toggle icon-menu"></div>
+
+      <nav class="nav nav--primary">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--alt" href="/fund-treatments"><span class="nav__copy">View Patients</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/about"><span class="nav__copy">About Us</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/faq"><span class="nav__copy">FAQ</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/registration"><span class="nav__copy">Sign Up</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/donors/sign_in"><span class="nav__copy">Log In</span></a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="nav-toggle icon-menu"></div>
-
-    <nav class="nav nav--primary">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="/fund-treatments"><span class="nav__copy">View Patients</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/about"><span class="nav__copy">About Us</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/faq"><span class="nav__copy">FAQ</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/registration"><span class="nav__copy">Sign Up</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/donors/sign_in"><span class="nav__copy">Log In</span></a>
-        </li>
-      </ul>
-    </nav>
-  
   </header>
-
-  <div class="body">
-    
-    <div class="hero hero--teethy">
+  
+  <div class="hero hero--teethy">
+    <div class="hero__inner">
       <h2 class="hero__heading">
         Directly fund low-cost, high-impact medical care for people in need.
       </h2>
       <h3 class="hero__subheading">
         100% of donations fund patient care.
       </h3>
-      <a class="hero__cta" href="/fund-treatments">View Patients</a>
-    </div>
-
-    <section class="profiles">
-      <header class="profiles__heading">
-        New Patients
-      </header>
-  
-      <div class="profiles__body">
-
-        <article class="profile" itemscope itemtype="http://schema.org/Person">
-          <header class="profile__heading">
-            <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
-            <a class="profile__link" href="/profile/ab4b0095f403-rahel">
-              <img class="profile__image" itemprop="image" src="/img/badge_Rahel-Site-Photo.jpg" />
-            </a>
-          </header>
-          <div class="profile__body">
-            <div class="profile__progress progress">
-              <div class="progress__info">
-                <span class="progress__remaining">$195 To Go</span>
-                <span class="progress__donors">8 Donors</span>
-              </div>
-              <div class="progress__meter progress-bar">
-                <div class="progress-bar__fill" style="width:32%;"></div>
-              </div>
-            </div>
-            <p class="profile__copy" itemprop="description">
-              <span itemprop="givenName">Rahel</span> is the oldest of four children and lives with her family in Tanzania. She helps her mother around the house while her father works as a security guard to support their ...
-            </p>
-          </div>
-          <footer class="profile__footer">
-            <a class="profile__cta" itemprop="url" href="/profile/ab4b0095f403-rahel">
-              Read More
-            </a>
-          </footer>
-        </article>
-        
-        <article class="profile" itemscope itemtype="http://schema.org/Person">
-          <header class="profile__heading">
-            <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
-            <a class="profile__link" href="/profile/3947121e4eea-reaska">
-              <img class="profile__image" itemprop="image" src="/img/badge_Reaska-Site-Photo.jpg" />
-            </a>
-          </header>
-          <div class="profile__body">
-            <div class="profile__progress progress">
-              <div class="progress__info">
-                <span class="progress__remaining">$215 To Go</span>
-                <span class="progress__donors">4 Donors</span>
-              </div>
-              <div class="progress__meter progress-bar">
-                <div class="progress-bar__fill" style="width:92%;"></div>
-              </div>
-            </div>
-            <p class="profile__copy" itemprop="description">
-              15-year-old <span itemprop="givenName">Reaska</span> is an ambitious teenager from Cambodia who enjoys reading in his free time. Six weeks ago, Reasksa was in a motorbike accident and broke his arm. Reaska ...
-            </p>
-          </div>
-          <footer class="profile__footer">
-            <a class="profile__cta" itemprop="url" href="/profile/3947121e4eea-reaska">
-              Read More
-            </a>
-          </footer>
-        </article>
-        
-        <article class="profile" itemscope itemtype="http://schema.org/Person">
-          <header class="profile__heading">
-            <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
-            <a class="profile__link" href="/profile/c2561a4f3817-edith">
-              <img class="profile__image" itemprop="image" src="/img/badge_Edith-Site-Photo.jpg" />
-            </a>
-          </header>
-          <div class="profile__body">
-            <div class="profile__progress progress">
-              <div class="progress__info">
-                <span class="progress__remaining">$150 To Go</span>
-                <span class="progress__donors">0 Donors</span>
-              </div>
-              <div class="progress__meter progress-bar">
-                <div class="progress-bar__fill" style="width:0%;"></div>
-              </div>
-            </div>
-            <p class="profile__copy" itemprop="description">
-              <span itemprop="givenName">Edith</span> is preparing to welcome her second child into the world, but in Kenya where she lives, most expecting mothers lack access to basic maternal care. 90% of maternal deaths oc...
-            </p>
-          </div>
-          <footer class="profile__footer">
-            <a class="profile__cta" itemprop="url" href="/profile/c2561a4f3817-edith">
-              Read More
-            </a>
-          </footer>
-        </article>
-      
+      <div class="hero__cta">
+        <a class="hero__button" href="/fund-treatments">View Patients</a>
       </div>
-
-      <footer class="profiles__footer">
-        <a class="profiles__link"  href="/fund-treatments">
-          View All Patients
-        </a>
-      </footer>
-
-    </section>
-
-    
-    <nav class="nav nav--info">
-      <h3 class="nav__heading">
-        100% of your donation directly funds treatment!
-      </h3>
-      <ul class="nav__list">
-        <li class="nav__item nav__item--how">
-          <a class="nav__link" href="/about#how-watsi-works"><span class="nav__copy">How Watsi Works</span></a>
-        </li>
-        <li class="nav__item nav__item--blog">
-          <a class="nav__link" href="http://blog.watsi.com"><span class="nav__copy">Blog</span></a>
-        </li>
-        <li class="nav__item nav__item--connect">
-          <a class="nav__link" href="/about#get-involved"><span class="nav__copy">Connect With Us</span></a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="press">
-      <h3 class="press__heading">Featured In:</h3>
-      <ul class="press__list">
-        <li class="press__item press__item--techcrunch">
-          <a class="press__link" href="http://www.nytimes.com/2013/04/14/business/watsi-a-crowdfunding-site-offers-help-with-medical-care.html" target="_blank"><span class="press__copy">TechCrunch</span></a>
-        </li>
-        <li class="press__item press__item--wired">
-          <a class="press__link" href="http://www.wired.co.uk/news/archive/2012-09/05/watsi" target="_blank"><span class="press__copy">Wired</span></a>
-        </li>
-        <li class="press__item press__item--huffpo">
-          <a class="press__link" href="http://www.huffingtonpost.ca/2012/09/10/crowdfunding-platform-watsi_n_1865120.html" target="_blank"><span class="press__copy">The Huffington Post</span></a>
-        </li>
-        <li class="press__item press__item--nbc">
-          <a class="press__link" href="http://www.nbcnews.com/technology/technolog/watsi-kickstarter-third-world-medical-care-966283" target="_blank"><span class="press__copy">NBC</span></a>
-        </li>
-        <li class="press__item press__item--fastco">
-          <a class="press__link" href="http://www.fastcoexist.com/1680490/making-medical-care-affordable-in-developing-countries-with-help-from-the-crowd" target="_blank"><span class="press__copy">Fast Company</span></a>
-        </li>
-      </ul>
     </div>
+  </div>
 
+  <div class="body">
+    <div class="body__inner"> 
+      <section class="profiles">
+        <header class="profiles__heading">
+          New Patients
+        </header>
+    
+        <div class="profiles__body">
+
+          <article class="profile profile--left" itemscope itemtype="http://schema.org/Person">
+            <header class="profile__heading">
+              <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
+              <a class="profile__link" href="/profile/ab4b0095f403-rahel">
+                <img class="profile__image" itemprop="image" src="/img/badge_Rahel-Site-Photo.jpg" />
+              </a>
+            </header>
+            <div class="profile__body">
+              <div class="profile__progress progress">
+                <div class="progress__info">
+                  <span class="progress__remaining">$195 To Go</span>
+                  <span class="progress__donors">8 Donors</span>
+                </div>
+                <div class="progress__meter progress-bar">
+                  <div class="progress-bar__fill" style="width:32%;"></div>
+                </div>
+              </div>
+              <p class="profile__copy" itemprop="description">
+                <span itemprop="givenName">Rahel</span> is the oldest of four children and lives with her family in Tanzania. She helps her mother around the house while her father works as a security guard to support their ...
+              </p>
+            </div>
+            <footer class="profile__footer">
+              <a class="profile__cta" itemprop="url" href="/profile/ab4b0095f403-rahel">
+                Read More
+              </a>
+            </footer>
+          </article>
+          
+          <article class="profile profile--middle" itemscope itemtype="http://schema.org/Person">
+            <header class="profile__heading">
+              <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
+              <a class="profile__link" href="/profile/3947121e4eea-reaska">
+                <img class="profile__image" itemprop="image" src="/img/badge_Reaska-Site-Photo.jpg" />
+              </a>
+            </header>
+            <div class="profile__body">
+              <div class="profile__progress progress">
+                <div class="progress__info">
+                  <span class="progress__remaining">$215 To Go</span>
+                  <span class="progress__donors">4 Donors</span>
+                </div>
+                <div class="progress__meter progress-bar">
+                  <div class="progress-bar__fill" style="width:92%;"></div>
+                </div>
+              </div>
+              <p class="profile__copy" itemprop="description">
+                15-year-old <span itemprop="givenName">Reaska</span> is an ambitious teenager from Cambodia who enjoys reading in his free time. Six weeks ago, Reasksa was in a motorbike accident and broke his arm. Reaska ...
+              </p>
+            </div>
+            <footer class="profile__footer">
+              <a class="profile__cta" itemprop="url" href="/profile/3947121e4eea-reaska">
+                Read More
+              </a>
+            </footer>
+          </article>
+          
+          <article class="profile profile--right" itemscope itemtype="http://schema.org/Person">
+            <header class="profile__heading">
+              <time class="profile__timestamp" datetime="2013-07-22" pubdate></time>
+              <a class="profile__link" href="/profile/c2561a4f3817-edith">
+                <img class="profile__image" itemprop="image" src="/img/badge_Edith-Site-Photo.jpg" />
+              </a>
+            </header>
+            <div class="profile__body">
+              <div class="profile__progress progress">
+                <div class="progress__info">
+                  <span class="progress__remaining">$150 To Go</span>
+                  <span class="progress__donors">0 Donors</span>
+                </div>
+                <div class="progress__meter progress-bar">
+                  <div class="progress-bar__fill" style="width:0%;"></div>
+                </div>
+              </div>
+              <p class="profile__copy" itemprop="description">
+                <span itemprop="givenName">Edith</span> is preparing to welcome her second child into the world, but in Kenya where she lives, most expecting mothers lack access to basic maternal care. 90% of maternal deaths oc...
+              </p>
+            </div>
+            <footer class="profile__footer">
+              <a class="profile__cta" itemprop="url" href="/profile/c2561a4f3817-edith">
+                Read More
+              </a>
+            </footer>
+          </article>
+        
+        </div>
+
+        <footer class="profiles__footer">
+          <a class="profiles__link"  href="/fund-treatments">
+            View All Patients
+          </a>
+        </footer>
+
+      </section>
+
+      
+      <nav class="nav nav--info">
+        <h3 class="nav__heading">
+          100% of your donation directly funds treatment!
+        </h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--how" href="/about#how-watsi-works"><span class="nav__copy">How Watsi Works</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--blog" href="http://blog.watsi.com"><span class="nav__copy">Blog</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--connect" href="/about#get-involved"><span class="nav__copy">Connect With Us</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="press">
+        <h3 class="press__heading">Featured In:</h3>
+        <ul class="press__list">
+          <li class="press__item press__item--techcrunch">
+            <a class="press__link" href="http://www.nytimes.com/2013/04/14/business/watsi-a-crowdfunding-site-offers-help-with-medical-care.html" target="_blank"><span class="press__copy">TechCrunch</span></a>
+          </li>
+          <li class="press__item press__item--wired">
+            <a class="press__link" href="http://www.wired.co.uk/news/archive/2012-09/05/watsi" target="_blank"><span class="press__copy">Wired</span></a>
+          </li>
+          <li class="press__item press__item--huffpo">
+            <a class="press__link" href="http://www.huffingtonpost.ca/2012/09/10/crowdfunding-platform-watsi_n_1865120.html" target="_blank"><span class="press__copy">The Huffington Post</span></a>
+          </li>
+          <li class="press__item press__item--nbc">
+            <a class="press__link" href="http://www.nbcnews.com/technology/technolog/watsi-kickstarter-third-world-medical-care-966283" target="_blank"><span class="press__copy">NBC</span></a>
+          </li>
+          <li class="press__item press__item--fastco">
+            <a class="press__link" href="http://www.fastcoexist.com/1680490/making-medical-care-affordable-in-developing-countries-with-help-from-the-crowd" target="_blank"><span class="press__copy">Fast Company</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
-    
-    <nav class="nav nav--about">
-      <h4 class="nav__heading">
-        About Us
-      </h3>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="/about#story"><span class="nav__copy">Story</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/about#values"><span class="nav__copy">Values</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/about#team"><span class="nav__copy">Team</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/about#contact"><span class="nav__copy">Contact</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/about#get-involved"><span class="nav__copy">Get Involved</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="/about#faq"><span class="nav__copy">FAQ</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="http://twitter.com/watsi" target="_blank"><span class="nav__copy">Twitter</span></a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="http://facebook.com/Watsi.org" target="_blank"><span class="nav__copy">Facebook</span></a>
-        </li>
-      </ul>
-    </nav>
+    <div class="footer__inner"> 
+      <nav class="nav nav--about">
+        <h4 class="nav__heading">
+          About Us
+        </h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="/about#story"><span class="nav__copy">Story</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/about#values"><span class="nav__copy">Values</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/about#team"><span class="nav__copy">Team</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/about#contact"><span class="nav__copy">Contact</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/about#get-involved"><span class="nav__copy">Get Involved</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/about#faq"><span class="nav__copy">FAQ</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="http://twitter.com/watsi" target="_blank"><span class="nav__copy">Twitter</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="http://facebook.com/Watsi.org" target="_blank"><span class="nav__copy">Facebook</span></a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class="mailing-list">
-      <h4 class="mailing-list__heading">Join our mailing list!</h4>
-      <!-- This is obviously an embedded MailChimp form, but I'm providing BEM class styling to be re-applied to the already in-use MC IDs cause that's just how I roll (Also, they have a sick API...just sayin'...) -->
-      <input class="mailing-list__input" type="text" placeholder="Your Email Address" />
-      <input class="mailing-list__submit" type="submit" value="Submit" />
+      <div class="mailing-list">
+        <h4 class="mailing-list__heading">Join our mailing list!</h4>
+        <!-- This is obviously an embedded MailChimp form, but I'm providing BEM class styling to be re-applied to the already in-use MC IDs cause that's just how I roll (Also, they have a sick API...just sayin'...) -->
+        <input class="mailing-list__input" type="text" placeholder="Your Email Address" />
+        <input class="mailing-list__submit" type="submit" value="Submit" />
+      </div>
+
+      <div class="copyright">
+        &copy 2013 Watsi is a U.S. 501(c)(3) non-profit.
+      </div>
+
+      <div class="links">
+        <ul class="links__list">
+          <li class="links__item links__item--contact">
+            Contact us at: <a class="links__link" href="mailto:connect@watsi.org"><span class="links__copy">connect@watsi.org</span></a>
+          </li>
+          <li class="links__item links__item--photo">
+            <a class="links__link" href="http://www.flickr.com/photos/julien_harneis/"><span class="links__copy">Julien H.</span></a> (Photo)
+          </li>
+          <li class="links__item links__item--privacy">
+            <a class="links__link" href="/privacy"><span class="links__copy">Privacy</span></a>
+          </li>
+          <li class="links__item links__item--terms">
+            <a class="links__link" href="/terms"><span class="links__copy">Terms of Use</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <div class="copyright">
-      &copy 2013 Watsi is a U.S. 501(c)(3) non-profit.
-    </div>
-
-    <div class="links">
-      <ul class="links__list">
-        <li class="links__item links__item--contact">
-          Contact us at: <a class="links__link" href="mailto:connect@watsi.org"><span class="links__copy">connect@watsi.org</span></a>
-        </li>
-        <li class="links__item links__item--photo">
-          <a class="links__link" href="http://www.flickr.com/photos/julien_harneis/"><span class="links__copy">Julien H.</span></a> (Photo)
-        </li>
-        <li class="links__item links__item--privacy">
-          <a class="links__link" href="/privacy"><span class="links__copy">Privacy</span></a>
-        </li>
-        <li class="links__item links__item--terms">
-          <a class="links__link" href="/terms"><span class="links__copy">Terms of Use</span></a>
-        </li>
-      </ul>
-    </div>
-
   </footer>
 
   <div class="scripts">
