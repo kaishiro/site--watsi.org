@@ -16,6 +16,7 @@
 * Block Styling (Mobile)
 */
 .header {
+  @include micro-clearfix;
   @include shadow-divider;
   background:$bg-color;
 }

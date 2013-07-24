@@ -28,7 +28,6 @@
     width:155px;
   }
   .logo__copy {
-    @include text-replace;
   }
 }
 
@@ -38,6 +37,9 @@
 @media screen and (min-width: $width-tablet) {
 
   .logo {
+    .logo__link {
+      height:75px;
+    }
   }
 
 }
