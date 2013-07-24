@@ -49,6 +49,8 @@
   <link rel="stylesheet" href="/css/blocks/copyright.css">
   <link rel="stylesheet" href="/css/blocks/links.css">
   <link rel="stylesheet" href="/css/blocks/pagination.css">
+  <link rel="stylesheet" href="/css/blocks/chapter.css">
+  <link rel="stylesheet" href="/css/blocks/process.css">
   
   <!-- Style: Grid -->
   <link rel="stylesheet" href="/css/grid.css">
