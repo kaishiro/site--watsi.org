@@ -30,7 +30,16 @@
   &:after {
     clear: both;
   }
-  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1; /* For IE 6/7 (trigger hasLayout*/
+}
+
+@mixin zen-offset($cols: 1, $dir: 'left') {
+  @if $dir == 'left' {
+    margin-left: zen-grid-item-width($column-span:$cols, $column-count:16);
+  }
+  @if $dir == 'right' {
+    margin-right: zen-grid-item-width($column-span:$cols, $column-count:16);
+  }
 }
 
 @mixin button {
@@ -70,4 +79,11 @@
   &:hover {
     background:$button-blue-hover-color;
   }
+}
+
+
+@mixin grid-width($grid-width) {
+  max-width:$grid-width;
+  margin-left:auto;
+  margin-right:auto;
 }
