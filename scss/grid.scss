@@ -27,10 +27,10 @@ $zen-column-count: 1;
 $zen-gutter-width: 20px;
 
 /** Containers */
-.header,
-.body,
-.footer {
-  @include zen-grid-container;
+.header__inner,
+.body__inner,
+.footer__inner {
+  @include zen-grid-container();
 }
 
 /** Blocks */
@@ -39,10 +39,6 @@ $zen-gutter-width: 20px;
   @include zen-clear();
 }
 .nav--primary {
-  @include zen-grid-item(1, 1);
-  @include zen-clear();
-}
-.hero {
   @include zen-grid-item(1, 1);
   @include zen-clear();
 }
@@ -81,16 +77,51 @@ $zen-gutter-width: 20px;
 @media screen and (min-width: $width-tablet) {
  
   /** Variables */ 
-  $zen-column-count: 16;
+  $zen-column-count: 12;
   $zen-gutter-width: 10px;
- 
+  $grid-tablet: 90%;
+
   /** Containers */
-  .page__header,
-  .page__body,
-  .page__footer {
+  .header__inner,
+  .body__inner,
+  .footer__inner {
+    @include grid-width($grid-tablet);
   }
 
   /** Blocks */ 
+  .logo {
+    @include zen-grid-item(4, 1);
+    @include zen-clear(none);
+  }
+  .nav--primary {
+    @include zen-grid-item(8, 1, right);
+    @include zen-clear(none);
+  }
+  .profiles {
+    @include zen-grid-item(12, 1);
+  }
+  .nav--info {
+    @include zen-grid-item(12, 1);
+  }
+  .press {
+    @include zen-grid-item(12, 1);
+  }
+  .nav--about {
+    @include zen-grid-item(5, 1);
+    @include zen-clear(none);
+  }
+  .mailing-list {
+    @include zen-grid-item(7, 1, right);
+    @include zen-clear(none);
+  }
+  .copyright {
+    @include zen-grid-item(7, 1, right);
+    @include zen-clear(right);
+  }
+  .links {
+    @include zen-grid-item(7, 1, right);
+    @include zen-clear(right);
+  }
 
 }
 
@@ -100,14 +131,38 @@ $zen-gutter-width: 20px;
 @media screen and (min-width: $width-desktop) {
  
   /** Variables */ 
- 
+  $grid-desktop:940px;
+
   /** Containers */
-  .page__header,
-  .page__body,
-  .page__footer {
+  .header__inner,
+  .body__inner,
+  .footer__inner {
+    @include grid-width($grid-desktop);
   }
 
   /** Blocks */ 
+  .profiles {
+    @include zen-grid-item(12, 1, $gutter-width:0);
+  }
+  .press {
+    float:none;
+    width:905px;
+    margin:0 auto;
+  }
+  .nav--about {
+    @include zen-grid-item(4, 1);
+  }
+  .mailing-list {
+    @include zen-grid-item(3, 5);
+  }
+  .copyright {
+    @include zen-grid-item(4, 1, right);
+    @include zen-clear(right);
+  }
+  .links {
+    @include zen-grid-item(4, 1, right);
+    @include zen-clear(right);
+  }
 
 }
 
