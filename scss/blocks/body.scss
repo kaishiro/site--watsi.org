@@ -1,0 +1,50 @@
+/**
+* Block Stylesheet: body
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.body {
+  @include micro-clearfix;
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .body {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .body {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .body {
+  }
+
+}
