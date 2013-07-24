@@ -60,6 +60,15 @@
 @media screen and (min-width: $width-tablet) {
 
   .profile {
+  float:left;
+  margin-top:0;
+  width:32%;
+    .profile__copy {
+      min-height:170px;
+    }
+    &.profile--middle {
+      margin:0 2%;
+    }
   }
 
 }
@@ -70,6 +79,13 @@
 @media screen and (min-width: $width-desktop) {
 
   .profile {
+    width:300px;
+    &.profile--middle {
+      margin:0 20px;
+    }
+    .profile__copy {
+      min-height:auto;
+    }
   }
 
 }

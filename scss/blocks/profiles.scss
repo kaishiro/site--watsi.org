@@ -26,6 +26,7 @@
   }
   .profiles__body {
     width:100%;
+    @include micro-clearfix();
   }
   .profiles__footer {
     width:300px;
@@ -44,6 +45,15 @@
 @media screen and (min-width: $width-tablet) {
 
   .profiles {
+  padding-bottom:40px;
+    .profiles__heading {
+      margin:0 0 20px;
+      width:100%;
+    }
+    .profiles__footer {
+      margin:20px 0 0;
+      width:100%;
+    }
   }
 
 }
