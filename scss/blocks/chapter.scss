@@ -1,0 +1,67 @@
+/**
+* Block Stylesheet: chapter
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.chapter {
+  margin-top:20px;
+  padding-bottom:20px;
+  border-bottom:1px solid $border-color;
+  .chapter__heading {
+    font-weight:bold; 
+    margin-bottom:10px;
+  }
+  .chapter__subheading {
+    text-decoration:underline;
+  }
+}
+
+.chapter--advisors {
+  border-bottom:none;
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .chapter {
+  }
+  
+  .chapter--contact {
+    border-bottom:none;
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .chapter {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .chapter {
+  }
+
+}
