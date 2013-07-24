@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* line 19, ../../scss/blocks/pagination.scss */
+.pagination .pagination__list {
+  float: right;
+}
+/* line 22, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item {
+  height: 40px;
+  background: white;
+  float: left;
+  border: 1px solid #d8d8d8;
+  border-width: 1px 1px 1px 0;
+}
+/* line 28, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item:hover {
+  background: #f8f8f8;
+}
+/* line 32, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item--active {
+  background: #f8f8f8;
+}
+/* line 34, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item--active .pagination__link {
+  color: #686868;
+}
+/* line 38, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item--first {
+  border-width: 1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+/* line 44, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item--next .pagination__link:after {
+  content: ' ›';
+}
+/* line 49, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item--last {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+/* line 52, ../../scss/blocks/pagination.scss */
+.pagination .pagination__item--last .pagination__link:after {
+  content: ' »';
+}
+/* line 57, ../../scss/blocks/pagination.scss */
+.pagination .pagination__link {
+  display: block;
+  line-height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+/* line 62, ../../scss/blocks/pagination.scss */
+.pagination .pagination__link:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 78, ../../scss/blocks/pagination.scss */
+  .pagination .pagination__item {
+    height: 50px;
+  }
+  /* line 81, ../../scss/blocks/pagination.scss */
+  .pagination .pagination__link {
+    line-height: 50px;
+    padding: 0 20px;
+  }
+}

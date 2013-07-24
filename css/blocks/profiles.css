@@ -37,17 +37,26 @@
   line-height: 1.33333em;
 }
 
+/* line 41, ../../scss/blocks/profiles.scss */
+.profiles--listing {
+  border-bottom: none;
+}
+/* line 43, ../../scss/blocks/profiles.scss */
+.profiles--listing .profiles__heading {
+  text-align: right;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 47, ../../scss/blocks/profiles.scss */
+  /* line 53, ../../scss/blocks/profiles.scss */
   .profiles {
     padding-bottom: 40px;
   }
-  /* line 49, ../../scss/blocks/profiles.scss */
+  /* line 55, ../../scss/blocks/profiles.scss */
   .profiles .profiles__heading {
     margin: 0 0 20px;
     width: 100%;
   }
-  /* line 53, ../../scss/blocks/profiles.scss */
+  /* line 59, ../../scss/blocks/profiles.scss */
   .profiles .profiles__footer {
     margin: 20px 0 0;
     width: 100%;
