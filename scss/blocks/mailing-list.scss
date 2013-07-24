@@ -46,6 +46,7 @@
 @media screen and (min-width: $width-tablet) {
 
   .mailing-list {
+    padding-top:0;
   }
 
 }
@@ -56,6 +57,14 @@
 @media screen and (min-width: $width-desktop) {
 
   .mailing-list {
+    padding-top:20px;
+    border-bottom:none;
+    .mailing-list__input {
+      width:72%;
+    }
+    .mailing-list__submit {
+      width:28%;
+    }
   }
 
 }
