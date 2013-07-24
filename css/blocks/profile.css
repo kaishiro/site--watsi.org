@@ -67,27 +67,28 @@
   .profile {
     float: left;
     margin-top: 0;
+    margin-bottom: 20px;
     width: 32%;
   }
-  /* line 66, ../../scss/blocks/profile.scss */
+  /* line 67, ../../scss/blocks/profile.scss */
   .profile .profile__copy {
     min-height: 170px;
   }
-  /* line 69, ../../scss/blocks/profile.scss */
+  /* line 70, ../../scss/blocks/profile.scss */
   .profile.profile--middle {
     margin: 0 2%;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 81, ../../scss/blocks/profile.scss */
+  /* line 82, ../../scss/blocks/profile.scss */
   .profile {
     width: 300px;
   }
-  /* line 83, ../../scss/blocks/profile.scss */
+  /* line 84, ../../scss/blocks/profile.scss */
   .profile.profile--middle {
     margin: 0 20px;
   }
-  /* line 86, ../../scss/blocks/profile.scss */
+  /* line 87, ../../scss/blocks/profile.scss */
   .profile .profile__copy {
     min-height: auto;
   }
