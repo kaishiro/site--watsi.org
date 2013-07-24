@@ -1,7 +1,17 @@
 /* line 18, ../../scss/blocks/header.scss */
 .header {
+  zoom: 1;
   -webkit-box-shadow: 0 1px 1px 0 #d8d8d8;
   -moz-box-shadow: 0 1px 1px 0 #d8d8d8;
   box-shadow: 0 1px 1px 0 #d8d8d8;
   background: white;
+}
+/* line 26, ../../scss/_mixins.scss */
+.header:before, .header:after {
+  content: "";
+  display: table;
+}
+/* line 30, ../../scss/_mixins.scss */
+.header:after {
+  clear: both;
 }

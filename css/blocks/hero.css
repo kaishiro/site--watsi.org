@@ -1,7 +1,7 @@
 /* line 18, ../../scss/blocks/hero.scss */
 .hero {
   margin-top: 10px;
-  padding-bottom: 25px;
+  padding: 0 10px 25px 10px;
   border-bottom: 1px solid #e5e5e5;
 }
 /* line 22, ../../scss/blocks/hero.scss */
@@ -22,6 +22,10 @@
 }
 /* line 34, ../../scss/blocks/hero.scss */
 .hero .hero__cta {
+  margin-top: 10px;
+}
+/* line 37, ../../scss/blocks/hero.scss */
+.hero .hero__button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -37,16 +41,69 @@
   border: none;
   background: #ff645c;
   color: white;
-  margin-top: 10px;
 }
-/* line 56, ../../scss/_mixins.scss */
-.hero .hero__cta:hover {
+/* line 65, ../../scss/_mixins.scss */
+.hero .hero__button:hover {
   background: #ec5e5e;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 49, ../../scss/blocks/hero.scss */
+  /* line 48, ../../scss/blocks/hero.scss */
+  .hero {
+    margin-top: 0;
+    padding: 0;
+  }
+  /* line 51, ../../scss/blocks/hero.scss */
+  .hero .hero__inner {
+    padding-left: 5%;
+  }
+  /* line 54, ../../scss/blocks/hero.scss */
+  .hero .hero__heading {
+    text-align: left;
+    color: white;
+    font-size: 1.75em;
+    line-height: 1.42857em;
+    margin-top: 0;
+    padding-top: 35px;
+    width: 350px;
+  }
+  /* line 62, ../../scss/blocks/hero.scss */
+  .hero .hero__subheading {
+    width: 350px;
+    text-align: left;
+    color: white;
+    font-size: 1.25em;
+    line-height: 2em;
+    margin-top: 0;
+  }
+  /* line 69, ../../scss/blocks/hero.scss */
+  .hero .hero__cta {
+    width: 200px;
+  }
+
+  /* line 74, ../../scss/blocks/hero.scss */
   .hero--teethy {
+    height: 250px;
     background: url("/img/hero--teethy.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 87, ../../scss/blocks/hero.scss */
+  .hero {
+    width: 940px;
+    margin: 25px auto 0;
+  }
+  /* line 90, ../../scss/blocks/hero.scss */
+  .hero .hero__heading {
+    font-size: 2.125em;
+    line-height: 1.17647em;
+    width: 400px;
+  }
+  /* line 94, ../../scss/blocks/hero.scss */
+  .hero .hero__subheading {
+    font-size: 1.25em;
+    line-height: 2em;
+    width: 400px;
   }
 }

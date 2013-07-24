@@ -30,27 +30,40 @@
   text-align: center;
   text-transform: capitalize;
   color: #686868;
+  text-decoration: none;
 }
 /* line 43, ../../scss/blocks/nav.scss */
+.nav--primary .nav__link:hover {
+  color: #353535;
+}
+/* line 47, ../../scss/blocks/nav.scss */
+.nav--primary .nav__link--alt {
+  color: #197ad0;
+}
+/* line 49, ../../scss/blocks/nav.scss */
+.nav--primary .nav__link--alt:hover {
+  color: #145fa2;
+}
+/* line 53, ../../scss/blocks/nav.scss */
 .nav--primary.nav--open {
   margin-top: 0;
 }
 
-/* line 48, ../../scss/blocks/nav.scss */
+/* line 58, ../../scss/blocks/nav.scss */
 .nav--info {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 52, ../../scss/blocks/nav.scss */
+/* line 62, ../../scss/blocks/nav.scss */
 .nav--info .nav__heading {
   font-family: "MisoLight", Helvetica, Arial, sans-serif;
   font-size: 1.625em;
   line-height: 1.53846em;
   text-align: center;
 }
-/* line 57, ../../scss/blocks/nav.scss */
-.nav--info .nav__item {
+/* line 69, ../../scss/blocks/nav.scss */
+.nav--info .nav__link {
   background: url("/img/sprite.png");
   height: 189px;
   width: 189px;
@@ -59,36 +72,32 @@
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 64, ../../scss/blocks/nav.scss */
-.nav--info .nav__item--how {
-  background-position: -385px -2px;
-}
-/* line 66, ../../scss/blocks/nav.scss */
-.nav--info .nav__item--how:hover {
-  background-position: -385px -269px;
-}
-/* line 70, ../../scss/blocks/nav.scss */
-.nav--info .nav__item--blog {
-  background-position: 0px -2px;
-}
-/* line 72, ../../scss/blocks/nav.scss */
-.nav--info .nav__item--blog:hover {
-  background-position: 0px -269px;
-}
 /* line 76, ../../scss/blocks/nav.scss */
-.nav--info .nav__item--connect {
-  background-position: -192px -2px;
+.nav--info .nav__link--how {
+  background-position: -384px -2px;
 }
 /* line 78, ../../scss/blocks/nav.scss */
-.nav--info .nav__item--connect:hover {
-  background-position: -192px -269px;
+.nav--info .nav__link--how:hover {
+  background-position: -384px -269px;
 }
 /* line 82, ../../scss/blocks/nav.scss */
-.nav--info .nav__link {
-  height: 100%;
+.nav--info .nav__link--blog {
+  background-position: 0px -2px;
+}
+/* line 84, ../../scss/blocks/nav.scss */
+.nav--info .nav__link--blog:hover {
+  background-position: 0px -269px;
+}
+/* line 88, ../../scss/blocks/nav.scss */
+.nav--info .nav__link--connect {
+  background-position: -192px -2px;
+}
+/* line 90, ../../scss/blocks/nav.scss */
+.nav--info .nav__link--connect:hover {
+  background-position: -192px -269px;
 }
 
-/* line 87, ../../scss/blocks/nav.scss */
+/* line 96, ../../scss/blocks/nav.scss */
 .nav--about {
   zoom: 1;
   font-size: 0.875em;
@@ -105,19 +114,77 @@
 .nav--about:after {
   clear: both;
 }
-/* line 94, ../../scss/blocks/nav.scss */
+/* line 103, ../../scss/blocks/nav.scss */
 .nav--about .nav__item {
   float: left;
   width: 50%;
   margin-top: 10px;
 }
-/* line 99, ../../scss/blocks/nav.scss */
+/* line 108, ../../scss/blocks/nav.scss */
 .nav--about .nav__link {
   color: #686868;
 }
-/* line 101, ../../scss/blocks/nav.scss */
+/* line 110, ../../scss/blocks/nav.scss */
 .nav--about .nav__link:before {
   content: "» ";
   font-size: 0.75em;
   line-height: 1.66667em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 125, ../../scss/blocks/nav.scss */
+  .nav--primary {
+    margin-top: 0;
+  }
+  /* line 127, ../../scss/blocks/nav.scss */
+  .nav--primary .nav__list {
+    float: right;
+  }
+  /* line 130, ../../scss/blocks/nav.scss */
+  .nav--primary .nav__item {
+    margin-left: 20px;
+    display: inline;
+    width: auto;
+  }
+  /* line 135, ../../scss/blocks/nav.scss */
+  .nav--primary .nav__link {
+    font-size: 0.9375em;
+    line-height: 1.33333em;
+    display: inline;
+    height: 75px;
+    line-height: 75px;
+  }
+
+  /* line 143, ../../scss/blocks/nav.scss */
+  .nav--info {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  /* line 146, ../../scss/blocks/nav.scss */
+  .nav--info .nav__heading {
+    position: relative;
+    top: -20px;
+    background: #f8f8f8;
+    width: 450px;
+    margin: 0 auto;
+  }
+  /* line 153, ../../scss/blocks/nav.scss */
+  .nav--info .nav__list {
+    margin-left: 1%;
+  }
+  /* line 156, ../../scss/blocks/nav.scss */
+  .nav--info .nav__item {
+    float: left;
+    width: 33%;
+  }
+  /* line 160, ../../scss/blocks/nav.scss */
+  .nav--info .nav__link {
+    margin-top: 0;
+  }
+
+  /* line 165, ../../scss/blocks/nav.scss */
+  .nav--about {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }

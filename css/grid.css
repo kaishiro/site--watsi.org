@@ -1,23 +1,23 @@
 /* line 32, ../scss/grid.scss */
-.header,
-.body,
-.footer {
+.header__inner,
+.body__inner,
+.footer__inner {
   *position: relative;
   *zoom: 1;
 }
 /* line 46, ../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-.header:before, .header:after,
-.body:before,
-.body:after,
-.footer:before,
-.footer:after {
+.header__inner:before, .header__inner:after,
+.body__inner:before,
+.body__inner:after,
+.footer__inner:before,
+.footer__inner:after {
   content: "";
   display: table;
 }
 /* line 50, ../../../../var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-.header:after,
-.body:after,
-.footer:after {
+.header__inner:after,
+.body__inner:after,
+.footer__inner:after {
   clear: both;
 }
 
@@ -62,26 +62,6 @@
 }
 
 /* line 45, ../scss/grid.scss */
-.hero {
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-  clear: left;
-}
-
-/* line 49, ../scss/grid.scss */
 .profiles {
   float: left;
   width: 100%;
@@ -101,7 +81,7 @@
   clear: left;
 }
 
-/* line 53, ../scss/grid.scss */
+/* line 49, ../scss/grid.scss */
 .nav--info {
   float: left;
   width: 100%;
@@ -121,7 +101,7 @@
   clear: left;
 }
 
-/* line 57, ../scss/grid.scss */
+/* line 53, ../scss/grid.scss */
 .press {
   float: left;
   width: 100%;
@@ -141,7 +121,7 @@
   clear: left;
 }
 
-/* line 61, ../scss/grid.scss */
+/* line 57, ../scss/grid.scss */
 .nav--about {
   float: left;
   width: 100%;
@@ -161,7 +141,7 @@
   clear: left;
 }
 
-/* line 65, ../scss/grid.scss */
+/* line 61, ../scss/grid.scss */
 .mailing-list {
   float: left;
   width: 100%;
@@ -181,7 +161,7 @@
   clear: left;
 }
 
-/* line 69, ../scss/grid.scss */
+/* line 65, ../scss/grid.scss */
 .copyright {
   float: left;
   width: 100%;
@@ -201,7 +181,7 @@
   clear: left;
 }
 
-/* line 73, ../scss/grid.scss */
+/* line 69, ../scss/grid.scss */
 .links {
   float: left;
   width: 100%;
@@ -219,4 +199,306 @@
   _overflow: hidden;
   _overflow-y: visible;
   clear: left;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 87, ../scss/grid.scss */
+  .header__inner,
+  .body__inner,
+  .footer__inner {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 92, ../scss/grid.scss */
+  .logo {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: none;
+  }
+
+  /* line 96, ../scss/grid.scss */
+  .nav--primary {
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: none;
+  }
+
+  /* line 100, ../scss/grid.scss */
+  .profiles {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 103, ../scss/grid.scss */
+  .nav--info {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 106, ../scss/grid.scss */
+  .press {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 109, ../scss/grid.scss */
+  .nav--about {
+    float: left;
+    width: 41.66667%;
+    margin-left: 0%;
+    margin-right: -41.66667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: none;
+  }
+
+  /* line 113, ../scss/grid.scss */
+  .mailing-list {
+    float: right;
+    width: 58.33333%;
+    margin-right: 0%;
+    margin-left: -58.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: none;
+  }
+
+  /* line 117, ../scss/grid.scss */
+  .copyright {
+    float: right;
+    width: 58.33333%;
+    margin-right: 0%;
+    margin-left: -58.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: right;
+  }
+
+  /* line 121, ../scss/grid.scss */
+  .links {
+    float: right;
+    width: 58.33333%;
+    margin-right: 0%;
+    margin-left: -58.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 139, ../scss/grid.scss */
+  .header__inner,
+  .body__inner,
+  .footer__inner {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 144, ../scss/grid.scss */
+  .profiles {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 147, ../scss/grid.scss */
+  .press {
+    float: none;
+    width: 905px;
+    margin: 0 auto;
+  }
+
+  /* line 152, ../scss/grid.scss */
+  .nav--about {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 155, ../scss/grid.scss */
+  .mailing-list {
+    float: left;
+    width: 25%;
+    margin-left: 33.33333%;
+    margin-right: -58.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 158, ../scss/grid.scss */
+  .copyright {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: right;
+  }
+
+  /* line 162, ../scss/grid.scss */
+  .links {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: right;
+  }
 }

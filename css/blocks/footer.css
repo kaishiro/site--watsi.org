@@ -1,8 +1,18 @@
 /* line 18, ../../scss/blocks/footer.scss */
 .footer {
+  zoom: 1;
   background: #e5e5e5;
   border-top: 1px solid #d8d8d8;
   margin-top: 50px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+/* line 26, ../../scss/_mixins.scss */
+.footer:before, .footer:after {
+  content: "";
+  display: table;
+}
+/* line 30, ../../scss/_mixins.scss */
+.footer:after {
+  clear: both;
 }

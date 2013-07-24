@@ -12,63 +12,186 @@
 }
 /* line 28, ../../scss/blocks/press.scss */
 .press .press__item {
-  margin: 40px auto 0;
+  margin: 40px 0 0;
+}
+/* line 30, ../../scss/blocks/press.scss */
+.press .press__item:first-child {
+  margin-top: 0;
+}
+/* line 34, ../../scss/blocks/press.scss */
+.press .press__link {
+  display: block;
+  margin: 0 auto;
   background: url("/img/sprite.png");
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 32, ../../scss/blocks/press.scss */
-.press .press__item:first-child {
-  margin-top: 0;
-}
-/* line 36, ../../scss/blocks/press.scss */
-.press .press__item--techcrunch {
+/* line 43, ../../scss/blocks/press.scss */
+.press .press__item--techcrunch .press__link {
   height: 20px;
   width: 145px;
   background-position: -1053px -129px;
 }
-/* line 40, ../../scss/blocks/press.scss */
-.press .press__item--techcrunch:hover {
+/* line 47, ../../scss/blocks/press.scss */
+.press .press__item--techcrunch .press__link:hover {
   background-position: -1053px -109px;
 }
-/* line 44, ../../scss/blocks/press.scss */
-.press .press__item--wired {
+/* line 53, ../../scss/blocks/press.scss */
+.press .press__item--wired .press__link {
   height: 30px;
   width: 150px;
   background-position: -1053px -242px;
 }
-/* line 48, ../../scss/blocks/press.scss */
-.press .press__item--wired:hover {
+/* line 57, ../../scss/blocks/press.scss */
+.press .press__item--wired .press__link:hover {
   background-position: -1053px -210px;
 }
-/* line 52, ../../scss/blocks/press.scss */
-.press .press__item--huffpo {
+/* line 63, ../../scss/blocks/press.scss */
+.press .press__item--huffpo .press__link {
   height: 52px;
   width: 150px;
   background-position: -1053px -56px;
 }
-/* line 56, ../../scss/blocks/press.scss */
-.press .press__item--huffpo:hover {
+/* line 67, ../../scss/blocks/press.scss */
+.press .press__item--huffpo .press__link:hover {
   background-position: -1053px 0px;
 }
-/* line 60, ../../scss/blocks/press.scss */
-.press .press__item--nbc {
+/* line 73, ../../scss/blocks/press.scss */
+.press .press__item--nbc .press__link {
   height: 67px;
   width: 119px;
   background-position: -1068px -338px;
 }
-/* line 64, ../../scss/blocks/press.scss */
-.press .press__item--nbc:hover {
+/* line 77, ../../scss/blocks/press.scss */
+.press .press__item--nbc .press__link:hover {
   background-position: -1068px -270px;
 }
-/* line 68, ../../scss/blocks/press.scss */
-.press .press__item--fastco {
+/* line 83, ../../scss/blocks/press.scss */
+.press .press__item--fastco .press__link {
   height: 24px;
   width: 150px;
   background-position: -1053px -177px;
 }
-/* line 72, ../../scss/blocks/press.scss */
-.press .press__item--fastco:hover {
+/* line 87, ../../scss/blocks/press.scss */
+.press .press__item--fastco .press__link:hover {
   background-position: -1053px -152px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 102, ../../scss/blocks/press.scss */
+  .press .press__heading {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  /* line 106, ../../scss/blocks/press.scss */
+  .press .press__item {
+    float: left;
+    margin-top: 0;
+  }
+  /* line 110, ../../scss/blocks/press.scss */
+  .press .press__item--techcrunch {
+    width: 32%;
+    margin-left: 1%;
+    height: 75px;
+    padding-top: 27px;
+  }
+  /* line 115, ../../scss/blocks/press.scss */
+  .press .press__item--techcrunch .press__link {
+    height: 20px;
+    width: 145px;
+    background-position: -1053px -129px;
+  }
+  /* line 119, ../../scss/blocks/press.scss */
+  .press .press__item--techcrunch .press__link:hover {
+    background-position: -1053px -109px;
+  }
+  /* line 124, ../../scss/blocks/press.scss */
+  .press .press__item--wired {
+    width: 32%;
+    height: 75px;
+    padding-top: 22px;
+  }
+  /* line 128, ../../scss/blocks/press.scss */
+  .press .press__item--wired .press__link {
+    height: 30px;
+    width: 150px;
+    background-position: -1053px -242px;
+  }
+  /* line 132, ../../scss/blocks/press.scss */
+  .press .press__item--wired .press__link:hover {
+    background-position: -1053px -210px;
+  }
+  /* line 137, ../../scss/blocks/press.scss */
+  .press .press__item--huffpo {
+    width: 32%;
+    height: 75px;
+    padding-top: 12px;
+  }
+  /* line 141, ../../scss/blocks/press.scss */
+  .press .press__item--huffpo .press__link {
+    height: 52px;
+    width: 150px;
+    background-position: -1053px -56px;
+  }
+  /* line 145, ../../scss/blocks/press.scss */
+  .press .press__item--huffpo .press__link:hover {
+    background-position: -1053px 0px;
+  }
+  /* line 150, ../../scss/blocks/press.scss */
+  .press .press__item--nbc {
+    width: 32%;
+    margin-left: 18%;
+    height: 75px;
+    padding-top: 4px;
+  }
+  /* line 155, ../../scss/blocks/press.scss */
+  .press .press__item--nbc .press__link {
+    height: 67px;
+    width: 119px;
+    background-position: -1068px -338px;
+  }
+  /* line 159, ../../scss/blocks/press.scss */
+  .press .press__item--nbc .press__link:hover {
+    background-position: -1068px -270px;
+  }
+  /* line 164, ../../scss/blocks/press.scss */
+  .press .press__item--fastco {
+    width: 32%;
+    height: 75px;
+    padding-top: 25px;
+  }
+  /* line 168, ../../scss/blocks/press.scss */
+  .press .press__item--fastco .press__link {
+    height: 24px;
+    width: 150px;
+    background-position: -1053px -177px;
+  }
+  /* line 172, ../../scss/blocks/press.scss */
+  .press .press__item--fastco .press__link:hover {
+    background-position: -1053px -152px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 186, ../../scss/blocks/press.scss */
+  .press {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  /* line 189, ../../scss/blocks/press.scss */
+  .press .press__heading {
+    float: left;
+    width: auto;
+    line-height: 75px;
+    margin: 0;
+  }
+  /* line 195, ../../scss/blocks/press.scss */
+  .press .press__item {
+    padding-left: 20px;
+    padding-top: 0;
+    width: auto;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
 }

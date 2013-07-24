@@ -33,7 +33,29 @@
   color: white;
   font-size: 14px;
 }
-/* line 70, ../../scss/_mixins.scss */
+/* line 79, ../../scss/_mixins.scss */
 .mailing-list .mailing-list__submit:hover {
   background: #135fa2;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 48, ../../scss/blocks/mailing-list.scss */
+  .mailing-list {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 59, ../../scss/blocks/mailing-list.scss */
+  .mailing-list {
+    padding-top: 20px;
+    border-bottom: none;
+  }
+  /* line 62, ../../scss/blocks/mailing-list.scss */
+  .mailing-list .mailing-list__input {
+    width: 72%;
+  }
+  /* line 65, ../../scss/blocks/mailing-list.scss */
+  .mailing-list .mailing-list__submit {
+    width: 28%;
+  }
 }

@@ -57,7 +57,38 @@
   background: #166cb9;
   color: white;
 }
-/* line 70, ../../scss/_mixins.scss */
+/* line 79, ../../scss/_mixins.scss */
 .profile .profile__cta:hover {
   background: #135fa2;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 62, ../../scss/blocks/profile.scss */
+  .profile {
+    float: left;
+    margin-top: 0;
+    width: 32%;
+  }
+  /* line 66, ../../scss/blocks/profile.scss */
+  .profile .profile__copy {
+    min-height: 170px;
+  }
+  /* line 69, ../../scss/blocks/profile.scss */
+  .profile.profile--middle {
+    margin: 0 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 81, ../../scss/blocks/profile.scss */
+  .profile {
+    width: 300px;
+  }
+  /* line 83, ../../scss/blocks/profile.scss */
+  .profile.profile--middle {
+    margin: 0 20px;
+  }
+  /* line 86, ../../scss/blocks/profile.scss */
+  .profile .profile__copy {
+    min-height: auto;
+  }
 }

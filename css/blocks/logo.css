@@ -14,9 +14,10 @@
 .logo .logo__image {
   width: 155px;
 }
-/* line 30, ../../scss/blocks/logo.scss */
-.logo .logo__copy {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+
+@media screen and (min-width: 768px) {
+  /* line 40, ../../scss/blocks/logo.scss */
+  .logo .logo__link {
+    height: 75px;
+  }
 }

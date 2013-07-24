@@ -14,15 +14,42 @@
 /* line 27, ../../scss/blocks/profiles.scss */
 .profiles .profiles__body {
   width: 100%;
+  zoom: 1;
 }
-/* line 30, ../../scss/blocks/profiles.scss */
+/* line 26, ../../scss/_mixins.scss */
+.profiles .profiles__body:before, .profiles .profiles__body:after {
+  content: "";
+  display: table;
+}
+/* line 30, ../../scss/_mixins.scss */
+.profiles .profiles__body:after {
+  clear: both;
+}
+/* line 31, ../../scss/blocks/profiles.scss */
 .profiles .profiles__footer {
   width: 300px;
   text-align: right;
   margin: 20px auto 0;
 }
-/* line 35, ../../scss/blocks/profiles.scss */
+/* line 36, ../../scss/blocks/profiles.scss */
 .profiles .profiles__link {
   font-size: 0.9375em;
   line-height: 1.33333em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 47, ../../scss/blocks/profiles.scss */
+  .profiles {
+    padding-bottom: 40px;
+  }
+  /* line 49, ../../scss/blocks/profiles.scss */
+  .profiles .profiles__heading {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  /* line 53, ../../scss/blocks/profiles.scss */
+  .profiles .profiles__footer {
+    margin: 20px 0 0;
+    width: 100%;
+  }
 }
