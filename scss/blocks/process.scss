@@ -1,0 +1,93 @@
+/**
+* Block Stylesheet: process
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.process {
+  .process__item {
+    position:relative;
+    padding-bottom:10px;
+    border-bottom:1px solid $border-color;
+    min-height:100px;
+  }
+  .process__heading {
+    font-weight:bold;
+    @include adjust-font-size-to(28px);
+    font-family:$heading-font;
+    text-transform:uppercase;
+    color:$process-heading-color;
+    width:70%;
+  }
+  .process__copy {
+    font-weight:bold;
+    width:70%;
+  }
+  .process__icon {
+    &:before {
+      font-size:75px;
+      color:$process-heading-color;
+      position:absolute;
+      right:0;
+      top:20px;
+    }
+  }
+  .process__item--update {
+    border-bottom:none;
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .process {
+    border:1px solid $border-color;
+    .process__item {
+      padding:15px 0 20px 15px;
+    }
+    .process__icon {
+      top:30px;
+    }
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .process {
+    .process__item {
+      min-height:140px;
+    }
+    .process__icon {
+      top:30px;
+      right:15px;
+    }
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .process {
+  }
+
+}

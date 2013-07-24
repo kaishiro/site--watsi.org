@@ -114,6 +114,10 @@
   }
 }
 
+.nav--hero {
+  display:none;
+}
+
 /**
 * Block Styling (Tablet)
 */
@@ -167,6 +171,39 @@
     border-bottom:none;
   }
 
+  .nav--hero {
+    display:block;
+    width:100%;
+    .nav__list {
+      background:$bg-alt-dark-color;
+      @include micro-clearfix;
+    }
+    .nav__item {
+      float:left;
+      width:11%;
+      text-align:center;
+      height:35px;
+      overflow:hidden;
+    }
+    .nav__link {
+      color:$link-color;
+      @include adjust-font-size-to(12px);
+      line-height:35px;
+    }
+    .nav__copy {
+      display:block;
+      border-left:1px dotted $border-dark-color;
+    }
+    .nav__item {
+      &:first-child {
+        width:12%;
+        .nav__copy {
+          border-left:none;
+        }
+      }
+    }
+  }
+
 }
 
 /**
@@ -175,7 +212,11 @@
 @media screen and (min-width: $width-desktop) {
 
   .nav {
-    
+  }
+
+  .nav--hero {
+    width:940px;
+    margin:0 auto;
   }
 
 }

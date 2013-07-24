@@ -39,6 +39,12 @@
   }
 }
 
+.hero--kofi {
+  padding-bottom:10px;
+  .hero__cta {
+    display:none;
+  }
+}
 
 /**
 * Block Styling (Tablet)
@@ -77,6 +83,19 @@
     background-size:cover;
   }
 
+  .hero--kofi {
+    height:250px;  
+    background:url('/img/hero--kofi.jpg');
+    background-position:0 50%;
+    background-size:cover;
+    .hero__heading {
+      display:none;
+    }
+    .hero__subheading {
+      display:none;
+    }
+  }
+
 }
 
 /**
@@ -95,6 +114,10 @@
       @include adjust-font-size-to(20px);
       width:400px;
     }
+  }
+
+  .hero--kofi {
+    background-position:0 80%;
   }
 
 }

@@ -26,6 +26,12 @@
 @media screen and (min-width: $width-tablet) {
 
   .page {
+    .page__column--left {
+      padding-right:20px;  
+    }
+    .page__column--right {
+      padding-left:20px;
+    }
   }
 
 }
@@ -36,6 +42,12 @@
 @media screen and (min-width: $width-desktop) {
 
   .page {
+    .page__column--left {
+      padding-right:40px;  
+    }
+    .page__column--right {
+      padding-left:40px;
+    }
   }
 
 }
