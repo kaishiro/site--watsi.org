@@ -3,3 +3,24 @@
   background: #f8f8f8;
   border-top: 7px solid #197ad0;
 }
+
+@media screen and (min-width: 768px) {
+  /* line 29, ../../scss/blocks/page.scss */
+  .page .page__column--left {
+    padding-right: 20px;
+  }
+  /* line 32, ../../scss/blocks/page.scss */
+  .page .page__column--right {
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 45, ../../scss/blocks/page.scss */
+  .page .page__column--left {
+    padding-right: 40px;
+  }
+  /* line 48, ../../scss/blocks/page.scss */
+  .page .page__column--right {
+    padding-left: 40px;
+  }
+}

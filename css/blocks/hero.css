@@ -47,17 +47,26 @@
   background: #ec5e5e;
 }
 
+/* line 42, ../../scss/blocks/hero.scss */
+.hero--kofi {
+  padding-bottom: 10px;
+}
+/* line 44, ../../scss/blocks/hero.scss */
+.hero--kofi .hero__cta {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 48, ../../scss/blocks/hero.scss */
+  /* line 54, ../../scss/blocks/hero.scss */
   .hero {
     margin-top: 0;
     padding: 0;
   }
-  /* line 51, ../../scss/blocks/hero.scss */
+  /* line 57, ../../scss/blocks/hero.scss */
   .hero .hero__inner {
     padding-left: 5%;
   }
-  /* line 54, ../../scss/blocks/hero.scss */
+  /* line 60, ../../scss/blocks/hero.scss */
   .hero .hero__heading {
     text-align: left;
     color: white;
@@ -67,7 +76,7 @@
     padding-top: 35px;
     width: 350px;
   }
-  /* line 62, ../../scss/blocks/hero.scss */
+  /* line 68, ../../scss/blocks/hero.scss */
   .hero .hero__subheading {
     width: 350px;
     text-align: left;
@@ -76,34 +85,55 @@
     line-height: 2em;
     margin-top: 0;
   }
-  /* line 69, ../../scss/blocks/hero.scss */
+  /* line 75, ../../scss/blocks/hero.scss */
   .hero .hero__cta {
     width: 200px;
   }
 
-  /* line 74, ../../scss/blocks/hero.scss */
+  /* line 80, ../../scss/blocks/hero.scss */
   .hero--teethy {
     height: 250px;
     background: url("/img/hero--teethy.jpg");
     background-size: cover;
   }
+
+  /* line 86, ../../scss/blocks/hero.scss */
+  .hero--kofi {
+    height: 250px;
+    background: url("/img/hero--kofi.jpg");
+    background-position: 0 50%;
+    background-size: cover;
+  }
+  /* line 91, ../../scss/blocks/hero.scss */
+  .hero--kofi .hero__heading {
+    display: none;
+  }
+  /* line 94, ../../scss/blocks/hero.scss */
+  .hero--kofi .hero__subheading {
+    display: none;
+  }
 }
 @media screen and (min-width: 1024px) {
-  /* line 87, ../../scss/blocks/hero.scss */
+  /* line 106, ../../scss/blocks/hero.scss */
   .hero {
     width: 940px;
     margin: 25px auto 0;
   }
-  /* line 90, ../../scss/blocks/hero.scss */
+  /* line 109, ../../scss/blocks/hero.scss */
   .hero .hero__heading {
     font-size: 2.125em;
     line-height: 1.17647em;
     width: 400px;
   }
-  /* line 94, ../../scss/blocks/hero.scss */
+  /* line 113, ../../scss/blocks/hero.scss */
   .hero .hero__subheading {
     font-size: 1.25em;
     line-height: 2em;
     width: 400px;
+  }
+
+  /* line 119, ../../scss/blocks/hero.scss */
+  .hero--kofi {
+    background-position: 0 80%;
   }
 }

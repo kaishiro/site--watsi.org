@@ -1,0 +1,60 @@
+/* line 19, ../../scss/blocks/process.scss */
+.process .process__item {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8d8d8;
+  min-height: 100px;
+}
+/* line 25, ../../scss/blocks/process.scss */
+.process .process__heading {
+  font-weight: bold;
+  font-size: 1.75em;
+  line-height: 1.42857em;
+  font-family: "MisoLight", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #197ad0;
+  width: 70%;
+}
+/* line 33, ../../scss/blocks/process.scss */
+.process .process__copy {
+  font-weight: bold;
+  width: 70%;
+}
+/* line 38, ../../scss/blocks/process.scss */
+.process .process__icon:before {
+  font-size: 75px;
+  color: #197ad0;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+/* line 46, ../../scss/blocks/process.scss */
+.process .process__item--update {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 56, ../../scss/blocks/process.scss */
+  .process {
+    border: 1px solid #d8d8d8;
+  }
+  /* line 58, ../../scss/blocks/process.scss */
+  .process .process__item {
+    padding: 15px 0 20px 15px;
+  }
+  /* line 61, ../../scss/blocks/process.scss */
+  .process .process__icon {
+    top: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 74, ../../scss/blocks/process.scss */
+  .process .process__item {
+    min-height: 140px;
+  }
+  /* line 77, ../../scss/blocks/process.scss */
+  .process .process__icon {
+    top: 30px;
+    right: 15px;
+  }
+}

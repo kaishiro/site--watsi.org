@@ -131,22 +131,27 @@
   line-height: 1.66667em;
 }
 
+/* line 117, ../../scss/blocks/nav.scss */
+.nav--hero {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 125, ../../scss/blocks/nav.scss */
+  /* line 129, ../../scss/blocks/nav.scss */
   .nav--primary {
     margin-top: 0;
   }
-  /* line 127, ../../scss/blocks/nav.scss */
+  /* line 131, ../../scss/blocks/nav.scss */
   .nav--primary .nav__list {
     float: right;
   }
-  /* line 130, ../../scss/blocks/nav.scss */
+  /* line 134, ../../scss/blocks/nav.scss */
   .nav--primary .nav__item {
     margin-left: 20px;
     display: inline;
     width: auto;
   }
-  /* line 135, ../../scss/blocks/nav.scss */
+  /* line 139, ../../scss/blocks/nav.scss */
   .nav--primary .nav__link {
     font-size: 0.9375em;
     line-height: 1.33333em;
@@ -155,12 +160,12 @@
     line-height: 75px;
   }
 
-  /* line 143, ../../scss/blocks/nav.scss */
+  /* line 147, ../../scss/blocks/nav.scss */
   .nav--info {
     padding-top: 0;
     padding-bottom: 40px;
   }
-  /* line 146, ../../scss/blocks/nav.scss */
+  /* line 150, ../../scss/blocks/nav.scss */
   .nav--info .nav__heading {
     position: relative;
     top: -20px;
@@ -168,23 +173,78 @@
     width: 450px;
     margin: 0 auto;
   }
-  /* line 153, ../../scss/blocks/nav.scss */
+  /* line 157, ../../scss/blocks/nav.scss */
   .nav--info .nav__list {
     margin-left: 1%;
   }
-  /* line 156, ../../scss/blocks/nav.scss */
+  /* line 160, ../../scss/blocks/nav.scss */
   .nav--info .nav__item {
     float: left;
     width: 33%;
   }
-  /* line 160, ../../scss/blocks/nav.scss */
+  /* line 164, ../../scss/blocks/nav.scss */
   .nav--info .nav__link {
     margin-top: 0;
   }
 
-  /* line 165, ../../scss/blocks/nav.scss */
+  /* line 169, ../../scss/blocks/nav.scss */
   .nav--about {
     padding-bottom: 0;
     border-bottom: none;
+  }
+
+  /* line 174, ../../scss/blocks/nav.scss */
+  .nav--hero {
+    display: block;
+    width: 100%;
+  }
+  /* line 177, ../../scss/blocks/nav.scss */
+  .nav--hero .nav__list {
+    background: #e5e5e5;
+    zoom: 1;
+  }
+  /* line 26, ../../scss/_mixins.scss */
+  .nav--hero .nav__list:before, .nav--hero .nav__list:after {
+    content: "";
+    display: table;
+  }
+  /* line 30, ../../scss/_mixins.scss */
+  .nav--hero .nav__list:after {
+    clear: both;
+  }
+  /* line 181, ../../scss/blocks/nav.scss */
+  .nav--hero .nav__item {
+    float: left;
+    width: 11%;
+    text-align: center;
+    height: 35px;
+    overflow: hidden;
+  }
+  /* line 188, ../../scss/blocks/nav.scss */
+  .nav--hero .nav__link {
+    color: #686868;
+    font-size: 0.75em;
+    line-height: 1.66667em;
+    line-height: 35px;
+  }
+  /* line 193, ../../scss/blocks/nav.scss */
+  .nav--hero .nav__copy {
+    display: block;
+    border-left: 1px dotted #bfbfbf;
+  }
+  /* line 198, ../../scss/blocks/nav.scss */
+  .nav--hero .nav__item:first-child {
+    width: 12%;
+  }
+  /* line 200, ../../scss/blocks/nav.scss */
+  .nav--hero .nav__item:first-child .nav__copy {
+    border-left: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 217, ../../scss/blocks/nav.scss */
+  .nav--hero {
+    width: 940px;
+    margin: 0 auto;
   }
 }

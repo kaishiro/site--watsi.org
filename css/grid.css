@@ -201,8 +201,28 @@
   clear: left;
 }
 
+/* line 73, ../scss/grid.scss */
+.page__column {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  clear: left;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 87, ../scss/grid.scss */
+  /* line 91, ../scss/grid.scss */
   .header__inner,
   .body__inner,
   .footer__inner {
@@ -211,7 +231,7 @@
     margin-right: auto;
   }
 
-  /* line 92, ../scss/grid.scss */
+  /* line 96, ../scss/grid.scss */
   .logo {
     float: left;
     width: 33.33333%;
@@ -231,7 +251,7 @@
     clear: none;
   }
 
-  /* line 96, ../scss/grid.scss */
+  /* line 100, ../scss/grid.scss */
   .nav--primary {
     float: right;
     width: 66.66667%;
@@ -251,7 +271,7 @@
     clear: none;
   }
 
-  /* line 100, ../scss/grid.scss */
+  /* line 104, ../scss/grid.scss */
   .profiles {
     float: left;
     width: 100%;
@@ -270,7 +290,7 @@
     _overflow-y: visible;
   }
 
-  /* line 103, ../scss/grid.scss */
+  /* line 107, ../scss/grid.scss */
   .nav--info {
     float: left;
     width: 100%;
@@ -289,7 +309,7 @@
     _overflow-y: visible;
   }
 
-  /* line 106, ../scss/grid.scss */
+  /* line 110, ../scss/grid.scss */
   .press {
     float: left;
     width: 100%;
@@ -308,7 +328,7 @@
     _overflow-y: visible;
   }
 
-  /* line 109, ../scss/grid.scss */
+  /* line 113, ../scss/grid.scss */
   .nav--about {
     float: left;
     width: 41.66667%;
@@ -328,7 +348,7 @@
     clear: none;
   }
 
-  /* line 113, ../scss/grid.scss */
+  /* line 117, ../scss/grid.scss */
   .mailing-list {
     float: right;
     width: 58.33333%;
@@ -348,7 +368,7 @@
     clear: none;
   }
 
-  /* line 117, ../scss/grid.scss */
+  /* line 121, ../scss/grid.scss */
   .copyright {
     float: right;
     width: 58.33333%;
@@ -368,7 +388,7 @@
     clear: right;
   }
 
-  /* line 121, ../scss/grid.scss */
+  /* line 125, ../scss/grid.scss */
   .links {
     float: right;
     width: 58.33333%;
@@ -387,9 +407,49 @@
     _overflow-y: visible;
     clear: right;
   }
+
+  /* line 129, ../scss/grid.scss */
+  .page__column--left {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: left;
+  }
+
+  /* line 133, ../scss/grid.scss */
+  .page__column--right {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    clear: right;
+  }
 }
 @media screen and (min-width: 1024px) {
-  /* line 139, ../scss/grid.scss */
+  /* line 151, ../scss/grid.scss */
   .header__inner,
   .body__inner,
   .footer__inner {
@@ -398,7 +458,7 @@
     margin-right: auto;
   }
 
-  /* line 144, ../scss/grid.scss */
+  /* line 156, ../scss/grid.scss */
   .profiles {
     float: left;
     width: 100%;
@@ -417,14 +477,14 @@
     _overflow-y: visible;
   }
 
-  /* line 147, ../scss/grid.scss */
+  /* line 159, ../scss/grid.scss */
   .press {
     float: none;
     width: 905px;
     margin: 0 auto;
   }
 
-  /* line 152, ../scss/grid.scss */
+  /* line 164, ../scss/grid.scss */
   .nav--about {
     float: left;
     width: 33.33333%;
@@ -443,7 +503,7 @@
     _overflow-y: visible;
   }
 
-  /* line 155, ../scss/grid.scss */
+  /* line 167, ../scss/grid.scss */
   .mailing-list {
     float: left;
     width: 25%;
@@ -462,7 +522,7 @@
     _overflow-y: visible;
   }
 
-  /* line 158, ../scss/grid.scss */
+  /* line 170, ../scss/grid.scss */
   .copyright {
     float: right;
     width: 33.33333%;
@@ -482,7 +542,7 @@
     clear: right;
   }
 
-  /* line 162, ../scss/grid.scss */
+  /* line 174, ../scss/grid.scss */
   .links {
     float: right;
     width: 33.33333%;
