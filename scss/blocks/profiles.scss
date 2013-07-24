@@ -38,6 +38,12 @@
   }
 }
 
+.profiles--listing {
+  border-bottom:none;
+  .profiles__heading {
+    text-align:right;
+  }
+}
 
 /**
 * Block Styling (Tablet)
