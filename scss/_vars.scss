@@ -66,6 +66,7 @@ $text-color: $color-grey4;
 $hero-text-color: $color-white;
 $bg-color: $color-white;
 $bg-alt-color: $color-grey1;
+$bg-alt-dark-color: $color-grey2;
 $bg-footer-color: $color-grey2;
 $link-color: $color-grey4;
 $link-hover-color: darken($color-grey4, 20%);
@@ -74,6 +75,7 @@ $link-alt-hover-color: darken($color-blue1, 10%);
 $link-active-color: $color-blue1;
 $link-active-hover-color: darken($color-blue1, 10%);
 $border-color: $color-grey3;
+$border-dark-color: darken($color-grey3, 10%);
 $border-light-color: lighten($color-grey3, 5%);
 $border-alt-color: $color-blue1;
 $shadow-color: $color-grey3;
@@ -85,6 +87,7 @@ $button-blue-hover-color: darken($color-blue3, 5%);
 $button-blue-text-color: $color-white;
 $progress-bar-bg-color: $color-grey2;
 $progress-bar-color: $color-red1;
+$process-heading-color: $color-blue1;
 
 /**
 * Font Variables (Descriptive)
