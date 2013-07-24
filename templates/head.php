@@ -48,6 +48,8 @@
   <link rel="stylesheet" href="/css/blocks/mailing-list.css">
   <link rel="stylesheet" href="/css/blocks/copyright.css">
   <link rel="stylesheet" href="/css/blocks/links.css">
+  <link rel="stylesheet" href="/css/blocks/pagination.css">
+  
   <!-- Style: Grid -->
   <link rel="stylesheet" href="/css/grid.css">
 
