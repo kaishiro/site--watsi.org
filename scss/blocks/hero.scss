@@ -17,7 +17,7 @@
 */
 .hero {
   margin-top:10px;
-  padding-bottom:25px;
+  padding:0 10px 25px 10px;
   border-bottom:1px solid $border-light-color;
   .hero__heading {
     font-family:$heading-font;
@@ -32,8 +32,10 @@
     text-align:center;
   }
   .hero__cta {
-    @include button-red;
     margin-top:10px;
+  }
+  .hero__button {
+    @include button-red;
   }
 }
 
@@ -44,10 +46,35 @@
 @media screen and (min-width: $width-tablet) {
 
   .hero {
+    margin-top:0;
+    padding:0;
+    .hero__inner {
+      padding-left:5%;
+    }
+    .hero__heading {
+      text-align:left;
+      color:$hero-text-color;
+      @include adjust-font-size-to(28px);
+      margin-top:0;
+      padding-top:35px;
+      width:350px;
+    }
+    .hero__subheading {
+      width:350px;
+      text-align:left;
+      color:$hero-text-color;
+      @include adjust-font-size-to(20px);
+      margin-top:0;
+    }
+    .hero__cta {
+      width:200px;
+    }
   }
 
   .hero--teethy {
+    height:250px;  
     background:url('/img/hero--teethy.jpg');
+    background-size:cover;
   }
 
 }
@@ -58,6 +85,16 @@
 @media screen and (min-width: $width-desktop) {
 
   .hero {
+    width:940px;
+    margin:25px auto 0;
+    .hero__heading {
+      @include adjust-font-size-to(34px);
+      width:400px;
+    }
+    .hero__subheading {
+      @include adjust-font-size-to(20px);
+      width:400px;
+    }
   }
 
 }
