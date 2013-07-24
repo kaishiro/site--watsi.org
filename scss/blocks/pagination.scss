@@ -1,0 +1,109 @@
+/**
+* Block Stylesheet: pagination
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.pagination {
+  .pagination__list {
+    float:right;
+  }
+  .pagination__item {
+    height:40px;
+    background:$bg-color;
+    float:left;
+    border:1px solid $border-color;
+    border-width:1px 1px 1px 0;
+    &:hover {
+      background:$bg-alt-color;
+    }
+  }
+  .pagination__item--active {
+    background:$bg-alt-color;
+    .pagination__link {
+      color:$link-color;
+    }
+  }
+  .pagination__item--first {
+    border-width:1px;
+    @include border-radius(4px 0 0 4px);
+  }
+  .pagination__item--next {
+    .pagination__link {
+      &:after {
+        content:' ›';
+      }
+    }
+  }
+  .pagination__item--last {
+    @include border-radius(0 4px 4px 0);
+    .pagination__link {
+      &:after {
+        content:' »';
+      }
+    }
+  }
+  .pagination__link {
+    display:block;
+    line-height:40px;
+    padding:0 10px;
+    cursor:pointer;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+  .pagination__copy {
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .pagination {
+    .pagination__list {
+    }
+    .pagination__item {
+      height:50px;
+    }
+    .pagination__link {
+      line-height:50px;
+      padding:0 20px;
+    }
+    .pagination__copy {
+    }
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .pagination {
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .pagination {
+  }
+
+}
