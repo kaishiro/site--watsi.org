@@ -70,6 +70,10 @@ $zen-gutter-width: 20px;
   @include zen-grid-item(1, 1);
   @include zen-clear();
 }
+.page__column {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
 
 /**
 * Zen Grid Settings (Tablet)
@@ -120,6 +124,14 @@ $zen-gutter-width: 20px;
   }
   .links {
     @include zen-grid-item(7, 1, right);
+    @include zen-clear(right);
+  }
+  .page__column--left {
+    @include zen-grid-item(6, 1);
+    @include zen-clear();
+  }
+  .page__column--right {
+    @include zen-grid-item(6, 1, right);
     @include zen-clear(right);
   }
 
