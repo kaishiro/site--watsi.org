@@ -29,11 +29,12 @@
   display: block;
   cursor: pointer;
   border: none;
+  -webkit-appearance: none;
   background: #166cb9;
   color: white;
   font-size: 14px;
 }
-/* line 83, ../../scss/_mixins.scss */
+/* line 84, ../../scss/_mixins.scss */
 .mailing-list .mailing-list__submit:hover {
   background: #135fa2;
 }

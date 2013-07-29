@@ -39,10 +39,11 @@
   display: block;
   cursor: pointer;
   border: none;
+  -webkit-appearance: none;
   background: #ff645c;
   color: white;
 }
-/* line 69, ../../scss/_mixins.scss */
+/* line 70, ../../scss/_mixins.scss */
 .hero .hero__button:hover {
   background: #ec5e5e;
 }

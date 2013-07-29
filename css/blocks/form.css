@@ -47,19 +47,19 @@
   line-height: 40px;
   padding: 0 10px;
 }
-/* line 96, ../../scss/_mixins.scss */
+/* line 97, ../../scss/_mixins.scss */
 .form .form__input--text::-webkit-input-placeholder {
   color: #828282;
 }
-/* line 99, ../../scss/_mixins.scss */
+/* line 100, ../../scss/_mixins.scss */
 .form .form__input--text:-moz-placeholder {
   color: #828282;
 }
-/* line 102, ../../scss/_mixins.scss */
+/* line 103, ../../scss/_mixins.scss */
 .form .form__input--text::-moz-placeholder {
   color: #828282;
 }
-/* line 105, ../../scss/_mixins.scss */
+/* line 106, ../../scss/_mixins.scss */
 .form .form__input--text:-ms-input-placeholder {
   color: #828282;
 }
@@ -78,11 +78,12 @@
   display: block;
   cursor: pointer;
   border: none;
+  -webkit-appearance: none;
   background: #166cb9;
   color: white;
   width: 100%;
 }
-/* line 83, ../../scss/_mixins.scss */
+/* line 84, ../../scss/_mixins.scss */
 .form .form__submit:hover {
   background: #135fa2;
 }

@@ -39,10 +39,11 @@
   display: block;
   cursor: pointer;
   border: none;
+  -webkit-appearance: none;
   background: #166cb9;
   color: white;
 }
-/* line 83, ../../scss/_mixins.scss */
+/* line 84, ../../scss/_mixins.scss */
 .profile .profile__cta:hover {
   background: #135fa2;
 }
