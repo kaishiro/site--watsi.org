@@ -1,0 +1,136 @@
+/* line 18, ../../scss/blocks/placard.scss */
+.placard {
+  margin-top: 20px;
+}
+/* line 20, ../../scss/blocks/placard.scss */
+.placard .placard__heading {
+  font-family: "MisoLight", Helvetica, Arial, sans-serif;
+  font-size: 1.75em;
+  line-height: 1.42857em;
+  display: inline;
+}
+/* line 25, ../../scss/blocks/placard.scss */
+.placard .placard__share {
+  float: right;
+  margin-top: 5px;
+}
+/* line 31, ../../scss/blocks/placard.scss */
+.placard .placard__inner {
+  zoom: 1;
+}
+/* line 30, ../../scss/_mixins.scss */
+.placard .placard__inner:before, .placard .placard__inner:after {
+  content: "";
+  display: table;
+}
+/* line 34, ../../scss/_mixins.scss */
+.placard .placard__inner:after {
+  clear: both;
+}
+
+/* line 37, ../../scss/blocks/placard.scss */
+.placard--profile .placard__inner {
+  margin-top: 20px;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 20px;
+}
+/* line 41, ../../scss/blocks/placard.scss */
+.placard--profile .placard__inner:first-child {
+  padding-top: 0;
+  margin-top: 10px;
+  border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 55, ../../scss/blocks/placard.scss */
+  .placard .placard__outer {
+    background: #e5e5e5;
+    margin-top: 10px;
+    padding: 40px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #bfbfbf;
+  }
+  /* line 62, ../../scss/blocks/placard.scss */
+  .placard .placard__inner {
+    background: white;
+    padding: 40px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 2px 2px 3px 0 #d8d8d8;
+    -moz-box-shadow: 2px 2px 3px 0 #d8d8d8;
+    box-shadow: 2px 2px 3px 0 #d8d8d8;
+    border: 1px solid #d8d8d8;
+  }
+
+  /* line 71, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__outer {
+    zoom: 1;
+  }
+  /* line 30, ../../scss/_mixins.scss */
+  .placard--profile .placard__outer:before, .placard--profile .placard__outer:after {
+    content: "";
+    display: table;
+  }
+  /* line 34, ../../scss/_mixins.scss */
+  .placard--profile .placard__outer:after {
+    clear: both;
+  }
+  /* line 75, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner:first-child {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  /* line 80, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner--profile {
+    width: 45%;
+    height: 245px;
+    float: left;
+    margin-top: 0;
+    border-right: none;
+    padding: 20px 10px 20px 20px;
+  }
+  /* line 88, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner--progress {
+    width: 55%;
+    height: 245px;
+    float: left;
+    margin-top: 0;
+    border-left: none;
+    border-top: none;
+    padding: 20px 20px 20px 10px;
+  }
+  /* line 97, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner--info {
+    float: left;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 113, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner {
+    padding: 40px;
+    height: auto;
+  }
+  /* line 116, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner:first-child {
+    padding-top: 40px;
+  }
+  /* line 120, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner--profile {
+    width: 49%;
+    height: 325px;
+  }
+  /* line 124, ../../scss/blocks/placard.scss */
+  .placard--profile .placard__inner--progress {
+    width: 49%;
+    height: 325px;
+    float: right;
+  }
+}

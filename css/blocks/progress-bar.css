@@ -4,15 +4,87 @@
 }
 /* line 20, ../../scss/blocks/progress-bar.scss */
 .progress .progress__info {
-  text-align: center;
   font-size: 0.9375em;
   line-height: 1.33333em;
 }
-/* line 27, ../../scss/blocks/progress-bar.scss */
+/* line 26, ../../scss/blocks/progress-bar.scss */
 .progress .progress__donors:before {
   content: ' | ';
 }
-/* line 31, ../../scss/blocks/progress-bar.scss */
+/* line 30, ../../scss/blocks/progress-bar.scss */
 .progress .progress__meter {
   margin-top: 10px;
+}
+
+/* line 36, ../../scss/blocks/progress-bar.scss */
+.progress--tile .progress__info {
+  text-align: center;
+}
+
+/* line 42, ../../scss/blocks/progress-bar.scss */
+.progress--profile .progress__info {
+  margin-top: 10px;
+}
+/* line 45, ../../scss/blocks/progress-bar.scss */
+.progress--profile .progress__percent {
+  width: 50%;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 1.75em;
+  line-height: 1.42857em;
+}
+/* line 51, ../../scss/blocks/progress-bar.scss */
+.progress--profile .progress__percent:after {
+  position: relative;
+  left: 10px;
+  bottom: 4px;
+  font-size: 16px;
+  content: 'Funded';
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* line 61, ../../scss/blocks/progress-bar.scss */
+.progress--profile .progress__remaining {
+  width: 50%;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 1.75em;
+  line-height: 1.42857em;
+}
+/* line 67, ../../scss/blocks/progress-bar.scss */
+.progress--profile .progress__remaining:after {
+  content: 'To Go';
+  position: relative;
+  left: 10px;
+  bottom: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* line 77, ../../scss/blocks/progress-bar.scss */
+.progress--profile .progress__donors {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 101, ../../scss/blocks/progress-bar.scss */
+  .progress--profile .progress__percent {
+    font-size: 2.375em;
+    line-height: 1.57895em;
+  }
+  /* line 103, ../../scss/blocks/progress-bar.scss */
+  .progress--profile .progress__percent:after {
+    bottom: 8px;
+  }
+  /* line 107, ../../scss/blocks/progress-bar.scss */
+  .progress--profile .progress__remaining {
+    font-size: 2.375em;
+    line-height: 1.57895em;
+  }
+  /* line 109, ../../scss/blocks/progress-bar.scss */
+  .progress--profile .progress__remaining:after {
+    bottom: 8px;
+  }
 }

@@ -1,0 +1,133 @@
+/* line 19, ../../scss/blocks/form.scss */
+.form .form__item {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 25, ../../scss/blocks/form.scss */
+.form .form__item.form__item--card .form__label:before {
+  position: absolute;
+  right: 0;
+}
+/* line 30, ../../scss/blocks/form.scss */
+.form .form__item.form__item--expiration {
+  width: 48%;
+  float: left;
+}
+/* line 34, ../../scss/blocks/form.scss */
+.form .form__item.form__item--cvv {
+  width: 48%;
+  float: right;
+}
+/* line 37, ../../scss/blocks/form.scss */
+.form .form__item.form__item--cvv .form__label:before {
+  position: absolute;
+  right: 0;
+}
+/* line 43, ../../scss/blocks/form.scss */
+.form .form__label {
+  width: 100%;
+  float: left;
+  margin-bottom: 2px;
+}
+/* line 50, ../../scss/blocks/form.scss */
+.form .form__input--text {
+  float: left;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 0.875em;
+  line-height: 1.42857em;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+/* line 96, ../../scss/_mixins.scss */
+.form .form__input--text::-webkit-input-placeholder {
+  color: #828282;
+}
+/* line 99, ../../scss/_mixins.scss */
+.form .form__input--text:-moz-placeholder {
+  color: #828282;
+}
+/* line 102, ../../scss/_mixins.scss */
+.form .form__input--text::-moz-placeholder {
+  color: #828282;
+}
+/* line 105, ../../scss/_mixins.scss */
+.form .form__input--text:-ms-input-placeholder {
+  color: #828282;
+}
+/* line 61, ../../scss/blocks/form.scss */
+.form .form__submit {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background: #166cb9;
+  color: white;
+  width: 100%;
+}
+/* line 83, ../../scss/_mixins.scss */
+.form .form__submit:hover {
+  background: #135fa2;
+}
+/* line 67, ../../scss/blocks/form.scss */
+.form .form__copy--right {
+  text-align: right;
+}
+
+/* line 73, ../../scss/blocks/form.scss */
+.form--donate .form__label {
+  width: 50%;
+  line-height: 40px;
+}
+/* line 77, ../../scss/blocks/form.scss */
+.form--donate .form__input {
+  width: 100px;
+}
+/* line 80, ../../scss/blocks/form.scss */
+.form--donate .form__input-pre {
+  display: none;
+}
+/* line 83, ../../scss/blocks/form.scss */
+.form--donate .form__input-post {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 95, ../../scss/blocks/form.scss */
+  .form .form__item:first-child {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 111, ../../scss/blocks/form.scss */
+  .form--donate .form__input-pre {
+    display: inline;
+    float: left;
+    line-height: 40px;
+    padding-right: 5px;
+  }
+  /* line 117, ../../scss/blocks/form.scss */
+  .form--donate .form__input-post {
+    display: inline;
+    float: left;
+    line-height: 40px;
+    padding-left: 5px;
+  }
+}

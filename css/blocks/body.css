@@ -2,12 +2,12 @@
 .body {
   zoom: 1;
 }
-/* line 26, ../../scss/_mixins.scss */
+/* line 30, ../../scss/_mixins.scss */
 .body:before, .body:after {
   content: "";
   display: table;
 }
-/* line 30, ../../scss/_mixins.scss */
+/* line 34, ../../scss/_mixins.scss */
 .body:after {
   clear: both;
 }

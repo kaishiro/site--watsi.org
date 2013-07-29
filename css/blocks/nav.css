@@ -105,12 +105,12 @@
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 20px;
 }
-/* line 26, ../../scss/_mixins.scss */
+/* line 30, ../../scss/_mixins.scss */
 .nav--about:before, .nav--about:after {
   content: "";
   display: table;
 }
-/* line 30, ../../scss/_mixins.scss */
+/* line 34, ../../scss/_mixins.scss */
 .nav--about:after {
   clear: both;
 }
@@ -203,12 +203,12 @@
     background: #e5e5e5;
     zoom: 1;
   }
-  /* line 26, ../../scss/_mixins.scss */
+  /* line 30, ../../scss/_mixins.scss */
   .nav--hero .nav__list:before, .nav--hero .nav__list:after {
     content: "";
     display: table;
   }
-  /* line 30, ../../scss/_mixins.scss */
+  /* line 34, ../../scss/_mixins.scss */
   .nav--hero .nav__list:after {
     clear: both;
   }

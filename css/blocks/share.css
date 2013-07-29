@@ -1,0 +1,22 @@
+/* line 21, ../../scss/blocks/share.scss */
+.share .share__item {
+  float: left;
+  margin-left: 5px;
+}
+/* line 25, ../../scss/blocks/share.scss */
+.share .share__link {
+  display: block;
+}
+/* line 27, ../../scss/blocks/share.scss */
+.share .share__link:hover {
+  text-decoration: none;
+}
+/* line 30, ../../scss/blocks/share.scss */
+.share .share__link:before {
+  font-size: 30px;
+  margin: 0;
+}
+/* line 35, ../../scss/blocks/share.scss */
+.share .share__copy {
+  display: none;
+}

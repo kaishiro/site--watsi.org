@@ -7,12 +7,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 26, ../../scss/_mixins.scss */
+/* line 30, ../../scss/_mixins.scss */
 .footer:before, .footer:after {
   content: "";
   display: table;
 }
-/* line 30, ../../scss/_mixins.scss */
+/* line 34, ../../scss/_mixins.scss */
 .footer:after {
   clear: both;
 }

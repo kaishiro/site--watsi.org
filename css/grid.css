@@ -221,8 +221,88 @@
   clear: left;
 }
 
+/* line 77, ../scss/grid.scss */
+.placard--register {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  clear: left;
+}
+
+/* line 81, ../scss/grid.scss */
+.placard--login {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  clear: left;
+}
+
+/* line 85, ../scss/grid.scss */
+.placard--reset {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  clear: left;
+}
+
+/* line 89, ../scss/grid.scss */
+.placard--profile {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  clear: left;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 91, ../scss/grid.scss */
+  /* line 107, ../scss/grid.scss */
   .header__inner,
   .body__inner,
   .footer__inner {
@@ -231,7 +311,7 @@
     margin-right: auto;
   }
 
-  /* line 96, ../scss/grid.scss */
+  /* line 112, ../scss/grid.scss */
   .logo {
     float: left;
     width: 33.33333%;
@@ -251,7 +331,7 @@
     clear: none;
   }
 
-  /* line 100, ../scss/grid.scss */
+  /* line 116, ../scss/grid.scss */
   .nav--primary {
     float: right;
     width: 66.66667%;
@@ -271,7 +351,7 @@
     clear: none;
   }
 
-  /* line 104, ../scss/grid.scss */
+  /* line 120, ../scss/grid.scss */
   .profiles {
     float: left;
     width: 100%;
@@ -290,7 +370,7 @@
     _overflow-y: visible;
   }
 
-  /* line 107, ../scss/grid.scss */
+  /* line 123, ../scss/grid.scss */
   .nav--info {
     float: left;
     width: 100%;
@@ -309,7 +389,7 @@
     _overflow-y: visible;
   }
 
-  /* line 110, ../scss/grid.scss */
+  /* line 126, ../scss/grid.scss */
   .press {
     float: left;
     width: 100%;
@@ -328,7 +408,7 @@
     _overflow-y: visible;
   }
 
-  /* line 113, ../scss/grid.scss */
+  /* line 129, ../scss/grid.scss */
   .nav--about {
     float: left;
     width: 41.66667%;
@@ -348,7 +428,7 @@
     clear: none;
   }
 
-  /* line 117, ../scss/grid.scss */
+  /* line 133, ../scss/grid.scss */
   .mailing-list {
     float: right;
     width: 58.33333%;
@@ -368,7 +448,7 @@
     clear: none;
   }
 
-  /* line 121, ../scss/grid.scss */
+  /* line 137, ../scss/grid.scss */
   .copyright {
     float: right;
     width: 58.33333%;
@@ -388,7 +468,7 @@
     clear: right;
   }
 
-  /* line 125, ../scss/grid.scss */
+  /* line 141, ../scss/grid.scss */
   .links {
     float: right;
     width: 58.33333%;
@@ -408,7 +488,7 @@
     clear: right;
   }
 
-  /* line 129, ../scss/grid.scss */
+  /* line 145, ../scss/grid.scss */
   .page__column--left {
     float: left;
     width: 50%;
@@ -428,7 +508,7 @@
     clear: left;
   }
 
-  /* line 133, ../scss/grid.scss */
+  /* line 149, ../scss/grid.scss */
   .page__column--right {
     float: right;
     width: 50%;
@@ -447,9 +527,85 @@
     _overflow-y: visible;
     clear: right;
   }
+
+  /* line 153, ../scss/grid.scss */
+  .placard--register {
+    float: left;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    margin-right: -91.66667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 156, ../scss/grid.scss */
+  .placard--login {
+    float: left;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    margin-right: -91.66667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 159, ../scss/grid.scss */
+  .placard--reset {
+    float: left;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    margin-right: -91.66667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 162, ../scss/grid.scss */
+  .placard--profile {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
 }
 @media screen and (min-width: 1024px) {
-  /* line 151, ../scss/grid.scss */
+  /* line 179, ../scss/grid.scss */
   .header__inner,
   .body__inner,
   .footer__inner {
@@ -458,7 +614,7 @@
     margin-right: auto;
   }
 
-  /* line 156, ../scss/grid.scss */
+  /* line 184, ../scss/grid.scss */
   .profiles {
     float: left;
     width: 100%;
@@ -477,14 +633,14 @@
     _overflow-y: visible;
   }
 
-  /* line 159, ../scss/grid.scss */
+  /* line 187, ../scss/grid.scss */
   .press {
     float: none;
     width: 905px;
     margin: 0 auto;
   }
 
-  /* line 164, ../scss/grid.scss */
+  /* line 192, ../scss/grid.scss */
   .nav--about {
     float: left;
     width: 33.33333%;
@@ -503,7 +659,7 @@
     _overflow-y: visible;
   }
 
-  /* line 167, ../scss/grid.scss */
+  /* line 195, ../scss/grid.scss */
   .mailing-list {
     float: left;
     width: 25%;
@@ -522,7 +678,7 @@
     _overflow-y: visible;
   }
 
-  /* line 170, ../scss/grid.scss */
+  /* line 198, ../scss/grid.scss */
   .copyright {
     float: right;
     width: 33.33333%;
@@ -542,7 +698,7 @@
     clear: right;
   }
 
-  /* line 174, ../scss/grid.scss */
+  /* line 202, ../scss/grid.scss */
   .links {
     float: right;
     width: 33.33333%;
@@ -560,5 +716,62 @@
     _overflow: hidden;
     _overflow-y: visible;
     clear: right;
+  }
+
+  /* line 206, ../scss/grid.scss */
+  .placard--register {
+    float: left;
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-right: -83.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 209, ../scss/grid.scss */
+  .placard--login {
+    float: left;
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-right: -83.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 212, ../scss/grid.scss */
+  .placard--reset {
+    float: left;
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-right: -83.33333%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
   }
 }

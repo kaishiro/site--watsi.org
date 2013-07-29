@@ -1,0 +1,28 @@
+/* line 18, ../../scss/blocks/verse.scss */
+.verse {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 21, ../../scss/blocks/verse.scss */
+.verse .verse__heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 25, ../../scss/blocks/verse.scss */
+.verse .verse__subheading {
+  text-decoration: underline;
+}
+/* line 28, ../../scss/blocks/verse.scss */
+.verse .verse__list--ordered {
+  list-style: decimal outside none;
+  margin-left: 20px;
+}
+/* line 32, ../../scss/blocks/verse.scss */
+.verse .verse__item {
+  margin: 10px 0;
+}
+
+/* line 37, ../../scss/blocks/verse.scss */
+.verse--separator {
+  border-bottom: 1px solid #d8d8d8;
+}

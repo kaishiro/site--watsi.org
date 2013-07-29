@@ -1,45 +1,30 @@
-/* line 18, ../../scss/blocks/profile.scss */
-.profile {
-  margin: 20px auto 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #d8d8d8;
-  -webkit-box-shadow: 0 1px 2px 0 #d8d8d8;
-  -moz-box-shadow: 0 1px 2px 0 #d8d8d8;
-  box-shadow: 0 1px 2px 0 #d8d8d8;
-  background: white;
-  width: 300px;
-}
-/* line 25, ../../scss/blocks/profile.scss */
+/* line 19, ../../scss/blocks/profile.scss */
 .profile:first-child {
   margin-top: 0;
 }
-/* line 32, ../../scss/blocks/profile.scss */
+/* line 26, ../../scss/blocks/profile.scss */
 .profile .profile__body {
   padding: 10px 20px 0;
 }
-/* line 35, ../../scss/blocks/profile.scss */
+/* line 29, ../../scss/blocks/profile.scss */
 .profile .profile__link {
   display: block;
 }
-/* line 38, ../../scss/blocks/profile.scss */
+/* line 32, ../../scss/blocks/profile.scss */
 .profile .profile__image {
   width: 100%;
 }
-/* line 43, ../../scss/blocks/profile.scss */
+/* line 37, ../../scss/blocks/profile.scss */
 .profile .profile__copy {
   margin-top: 10px;
   font-size: 15px;
   line-height: 21px;
 }
-/* line 48, ../../scss/blocks/profile.scss */
+/* line 42, ../../scss/blocks/profile.scss */
 .profile .profile__footer {
   padding: 10px 20px 20px;
 }
-/* line 51, ../../scss/blocks/profile.scss */
+/* line 45, ../../scss/blocks/profile.scss */
 .profile .profile__cta {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -57,39 +42,87 @@
   background: #166cb9;
   color: white;
 }
-/* line 79, ../../scss/_mixins.scss */
+/* line 83, ../../scss/_mixins.scss */
 .profile .profile__cta:hover {
   background: #135fa2;
 }
 
+/* line 50, ../../scss/blocks/profile.scss */
+.profile--full {
+  margin: 20px auto 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #d8d8d8;
+  -webkit-box-shadow: 0 1px 2px 0 #d8d8d8;
+  -moz-box-shadow: 0 1px 2px 0 #d8d8d8;
+  box-shadow: 0 1px 2px 0 #d8d8d8;
+  background: white;
+  width: 300px;
+}
+
+/* line 59, ../../scss/blocks/profile.scss */
+.profile--summary {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 62, ../../scss/blocks/profile.scss */
+  /* line 69, ../../scss/blocks/profile.scss */
   .profile {
     float: left;
     margin-top: 0;
     margin-bottom: 20px;
     width: 32%;
   }
-  /* line 67, ../../scss/blocks/profile.scss */
+  /* line 74, ../../scss/blocks/profile.scss */
   .profile .profile__copy {
     min-height: 170px;
   }
-  /* line 70, ../../scss/blocks/profile.scss */
+  /* line 77, ../../scss/blocks/profile.scss */
   .profile.profile--middle {
     margin: 0 2%;
   }
+
+  /* line 81, ../../scss/blocks/profile.scss */
+  .profile--summary {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  /* line 84, ../../scss/blocks/profile.scss */
+  .profile--summary .profile__image {
+    max-width: 250px;
+  }
+  /* line 87, ../../scss/blocks/profile.scss */
+  .profile--summary .profile__summary {
+    max-width: 250px;
+  }
 }
 @media screen and (min-width: 1024px) {
-  /* line 82, ../../scss/blocks/profile.scss */
+  /* line 99, ../../scss/blocks/profile.scss */
   .profile {
     width: 300px;
   }
-  /* line 84, ../../scss/blocks/profile.scss */
+  /* line 101, ../../scss/blocks/profile.scss */
   .profile.profile--middle {
     margin: 0 20px;
   }
-  /* line 87, ../../scss/blocks/profile.scss */
+  /* line 104, ../../scss/blocks/profile.scss */
   .profile .profile__copy {
     min-height: auto;
+  }
+
+  /* line 109, ../../scss/blocks/profile.scss */
+  .profile--summary {
+    width: 100%;
+  }
+  /* line 111, ../../scss/blocks/profile.scss */
+  .profile--summary .profile__image {
+    max-width: none;
+  }
+  /* line 114, ../../scss/blocks/profile.scss */
+  .profile--summary .profile__summary {
+    max-width: none;
   }
 }

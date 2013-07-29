@@ -42,19 +42,22 @@
   .process .process__item {
     padding: 15px 0 20px 15px;
   }
-  /* line 61, ../../scss/blocks/process.scss */
-  .process .process__icon {
-    top: 30px;
+  /* line 62, ../../scss/blocks/process.scss */
+  .process .process__icon:before {
+    top: 40px;
+    right: 10px;
+    font-size: 55px;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 74, ../../scss/blocks/process.scss */
+  /* line 78, ../../scss/blocks/process.scss */
   .process .process__item {
     min-height: 140px;
   }
-  /* line 77, ../../scss/blocks/process.scss */
-  .process .process__icon {
-    top: 30px;
-    right: 15px;
+  /* line 82, ../../scss/blocks/process.scss */
+  .process .process__icon:before {
+    font-size: 75px;
+    top: 25px;
+    right: 20px;
   }
 }
