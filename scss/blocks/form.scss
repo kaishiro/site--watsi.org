@@ -1,0 +1,135 @@
+/**
+* Block Stylesheet: form
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.form {
+  .form__item {
+    position:relative;
+    float:left;
+    width:100%;
+    margin-top:20px;
+    &.form__item--card {
+      .form__label:before {
+        position:absolute;
+        right:0;
+      }
+    }
+    &.form__item--expiration {
+      width:48%;
+      float:left;
+    }
+    &.form__item--cvv {
+      width:48%;
+      float:right;
+      .form__label:before {
+        position:absolute;
+        right:0;
+      }
+    }
+  }
+  .form__label {
+    width:100%;
+    float:left;
+    margin-bottom:2px;
+  }
+  .form__input {
+  }
+  .form__input--text {
+    float:left;
+    width:100%;
+    border:1px solid $border-color;
+    @include border-radius(4px);
+    @include adjust-font-size-to(14px);
+    height:40px;
+    line-height:40px;
+    padding:0 10px;
+    @include placeholder(lighten($text-color, 10%));
+  }
+  .form__submit {
+    @include button-blue;
+    width:100%;
+  }
+  .form__copy {
+  }
+  .form__copy--right {
+    text-align:right;
+  }
+}
+
+.form--donate {
+  .form__label {
+    width:50%;
+    line-height:40px;
+  }
+  .form__input {
+    width:100px;
+  }
+  .form__input-pre {
+    display:none;
+  }
+  .form__input-post {
+    display:none;
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .form {
+    .form__item {
+      &:first-child {
+        margin-top:0;
+      }
+    }
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .form {
+  }
+  .form--donate {
+    .form__input-pre {
+      display:inline;
+      float:left;
+      line-height:40px;
+      padding-right:5px;
+    }
+    .form__input-post {
+      display:inline;
+      float:left;
+      line-height:40px;
+      padding-left:5px;
+    }
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .form {
+  }
+
+}
