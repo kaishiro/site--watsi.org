@@ -16,12 +16,6 @@
 * Block Styling (Mobile)
 */
 .profile {
-  margin:20px auto 0;
-  @include border-radius(4px);
-  border:1px solid $border-color;
-  @include shadow-subtle;
-  background:$bg-color;
-  width:300px;
   &:first-child {
     margin-top:0;
   }
@@ -53,6 +47,19 @@
   }
 }
 
+.profile--full {
+  margin:20px auto 0;
+  @include border-radius(4px);
+  border:1px solid $border-color;
+  @include shadow-subtle;
+  background:$bg-color;
+  width:300px;
+}
+
+.profile--summary {
+  width:100%;
+}
+
 
 /**
 * Block Styling (Tablet)
@@ -71,6 +78,16 @@
       margin:0 2%;
     }
   }
+  .profile--summary {
+    width:100%;
+    margin-bottom:0;
+    .profile__image {
+      max-width:250px;
+    }
+    .profile__summary {
+      max-width:250px;
+    }
+  }
 
 }
 
@@ -86,6 +103,16 @@
     }
     .profile__copy {
       min-height:auto;
+    }
+  }
+
+  .profile--summary {
+    width:100%;
+    .profile__image {
+      max-width:none;
+    }
+    .profile__summary {
+      max-width:none;
     }
   }
 
