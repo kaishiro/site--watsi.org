@@ -1,5 +1,5 @@
 /**
-* Block Stylesheet: chapter
+* Block Stylesheet: verse
 * 
 * @project        example.com
 * @author         Matthew White <me@kaishi.ro>
@@ -15,12 +15,27 @@
 /**
 * Block Styling (Mobile)
 */
-.chapter {
-  .chapter__heading {
-    font-weight:bold;
-    @include adjust-font-size-to(24px);
-    margin-top:30px;
+.verse {
+  margin-top:20px;
+  padding-bottom:20px;
+  .verse__heading {
+    font-weight:bold; 
+    margin-bottom:10px;
   }
+  .verse__subheading {
+    text-decoration:underline;
+  }
+  .verse__list--ordered {
+    list-style:decimal outside none;
+    margin-left:20px;
+  }
+  .verse__item {
+    margin:10px 0;
+  }
+}
+
+.verse--separator {
+  border-bottom:1px solid $border-color;
 }
 
 /**
@@ -28,7 +43,7 @@
 */
 @media screen and (min-width: $width-tablet) {
 
-  .chapter {
+  .verse {
   }
 
 }
@@ -38,7 +53,7 @@
 */
 @media screen and (min-width: $width-desktop) {
 
-  .chapter {
+  .verse {
   }
 
 }
@@ -48,7 +63,7 @@
 */
 @media screen and (min-width: $width-xl) {
 
-  .chapter {
+  .verse {
   }
 
 }
