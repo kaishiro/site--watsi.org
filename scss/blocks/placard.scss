@@ -1,0 +1,143 @@
+/**
+* Block Stylesheet: placard
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.placard {
+  margin-top:20px;
+  .placard__heading {
+    font-family:$heading-font;
+    @include adjust-font-size-to(28px);
+    display:inline;
+  }
+  .placard__share {
+    float:right;
+    margin-top:5px;
+  }
+  .placard__outer {
+  }
+  .placard__inner {
+    @include micro-clearfix;
+  }
+}
+
+.placard--profile {
+  .placard__inner {
+    margin-top:20px;
+    border-top:1px solid $border-color;
+    padding-top:20px;
+    &:first-child {
+      padding-top:0;
+      margin-top:10px;
+      border-top:none;
+    }
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .placard {
+    .placard__outer {
+      background:$bg-alt-dark-color;
+      margin-top:10px;
+      padding:40px;
+      @include border-radius(8px);
+      border:1px solid $border-dark-color;
+    }
+    .placard__inner {
+      background:$bg-color;
+      padding:40px;
+      @include border-radius(2px);
+      @include shadow-subtle-full;
+      border:1px solid $border-color;
+    }
+  }
+  .placard--profile {
+    .placard__outer {
+      @include micro-clearfix;
+    }
+    .placard__inner {
+      &:first-child {
+        margin-top:0;
+        padding-top:20px;
+      }
+    }
+    .placard__inner--profile {
+      width:45%; 
+      height:245px;
+      float:left;
+      margin-top:0;
+      border-right:none;
+      padding:20px 10px 20px 20px;
+    }
+    .placard__inner--progress {
+      width:55%; 
+      height:245px;
+      float:left;
+      margin-top:0;
+      border-left:none;
+      border-top:none;
+      padding:20px 20px 20px 10px;
+    }
+    .placard__inner--info {
+      float:left;
+      padding:20px;
+    }
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .placard {
+  }
+  .placard--profile {
+    .placard__inner {
+      padding:40px;
+      height:auto;
+      &:first-child {
+        padding-top:40px;
+      }
+    }
+    .placard__inner--profile {
+      width:49%;
+      height:325px;
+    }
+    .placard__inner--progress {
+      width:49%;
+      height:325px;
+      float:right;
+    }
+    .placard__inner--info {
+    }
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .placard {
+  }
+
+}
