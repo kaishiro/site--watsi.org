@@ -1,0 +1,75 @@
+/**
+* Block Stylesheet: data
+* 
+* @project        example.com
+* @author         Matthew White <me@kaishi.ro>
+* @date           YYYY-MM-DD
+* @lastmodified   YYYY-MM-DD HH:MM
+*/
+
+/**
+* Base Partial Import
+*/
+@import 'base';
+
+/**
+* Block Styling (Mobile)
+*/
+.data {
+}
+
+.data--tabular {
+  .data__term {
+    margin-top:20px;
+    font-weight:bold;
+  }
+  .data__term--name {
+    margin-top:0;
+  }
+  .data__definition {
+    margin-top:5px;
+  }
+}
+
+/**
+* Block Styling (Tablet)
+*/
+@media screen and (min-width: $width-tablet) {
+
+  .data {
+  }
+
+}
+
+/**
+* Block Styling (Desktop)
+*/
+@media screen and (min-width: $width-desktop) {
+
+  .data {
+    .data__term {
+      float:left;
+      clear:left;
+      width:20%;
+    }
+    .data__definition {
+      float:left;
+      width:80%;
+      margin-top:20px;
+    }
+    .data__definition--name {
+      margin-top:0;
+    }
+  }
+
+}
+
+/**
+* Block Styling (XL)
+*/
+@media screen and (min-width: $width-xl) {
+
+  .data {
+  }
+
+}
