@@ -74,6 +74,22 @@ $zen-gutter-width: 20px;
   @include zen-grid-item(1, 1);
   @include zen-clear();
 }
+.placard--register {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.placard--login {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.placard--reset {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
+.placard--profile {
+  @include zen-grid-item(1, 1);
+  @include zen-clear();
+}
 
 /**
 * Zen Grid Settings (Tablet)
@@ -134,6 +150,18 @@ $zen-gutter-width: 20px;
     @include zen-grid-item(6, 1, right);
     @include zen-clear(right);
   }
+  .placard--register {
+    @include zen-grid-item(10, 2);
+  }
+  .placard--login {
+    @include zen-grid-item(10, 2);
+  }
+  .placard--reset {
+    @include zen-grid-item(10, 2);
+  }
+  .placard--profile {
+    @include zen-grid-item(12, 1);
+  }
 
 }
 
@@ -175,7 +203,15 @@ $zen-gutter-width: 20px;
     @include zen-grid-item(4, 1, right);
     @include zen-clear(right);
   }
-
+  .placard--register {
+    @include zen-grid-item(8, 3);
+  }
+  .placard--login {
+    @include zen-grid-item(8, 3);
+  }
+  .placard--reset {
+    @include zen-grid-item(8, 3);
+  }
 }
 
 /**
