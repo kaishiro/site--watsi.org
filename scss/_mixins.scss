@@ -55,6 +55,7 @@
   display:block;
   cursor:pointer;
   border:none;
+  -webkit-appearance:none;
 }
 
 @mixin button-red($type: 'rounded') {
