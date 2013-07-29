@@ -50,7 +50,12 @@
   <link rel="stylesheet" href="/css/blocks/links.css">
   <link rel="stylesheet" href="/css/blocks/pagination.css">
   <link rel="stylesheet" href="/css/blocks/chapter.css">
+  <link rel="stylesheet" href="/css/blocks/verse.css">
   <link rel="stylesheet" href="/css/blocks/process.css">
+  <link rel="stylesheet" href="/css/blocks/form.css">
+  <link rel="stylesheet" href="/css/blocks/placard.css">
+  <link rel="stylesheet" href="/css/blocks/share.css">
+  <link rel="stylesheet" href="/css/blocks/data.css">
   
   <!-- Style: Grid -->
   <link rel="stylesheet" href="/css/grid.css">
