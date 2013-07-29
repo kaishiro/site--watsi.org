@@ -1,5 +1,5 @@
 /**
-* Block Stylesheet: progress
+* Block Stylesheet: progress-bar
 * 
 * @project        example.com
 * @author         Matthew White <me@kaishi.ro>
@@ -15,21 +15,15 @@
 /**
 * Block Styling (Mobile)
 */
-.progress {
-  display:block;
-  .progress__info {
-    text-align:center;
-    @include adjust-font-size-to(15px);
-  }
-  .progress__remaining {
-  }
-  .progress__donors {
-    &:before {
-      content:' | ';
-    }
-  }
-  .progress__meter {
-    margin-top:10px
+.progress-bar {
+  width:100%;
+  height:20px;
+  background:$progress-bar-bg-color;
+  @include border-radius(4px);
+  overflow:hidden;
+  .progress-bar__fill {
+    height:20px;
+    background:$progress-bar-color;
   }
 }
 
@@ -39,7 +33,7 @@
 */
 @media screen and (min-width: $width-tablet) {
 
-  .progress {
+  .progress-bar {
   }
 
 }
@@ -49,7 +43,7 @@
 */
 @media screen and (min-width: $width-desktop) {
 
-  .progress {
+  .progress-bar {
   }
 
 }
@@ -59,7 +53,7 @@
 */
 @media screen and (min-width: $width-xl) {
 
-  .progress {
+  .progress-bar {
   }
 
 }

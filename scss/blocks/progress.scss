@@ -1,5 +1,5 @@
 /**
-* Block Stylesheet: progress-bar
+* Block Stylesheet: progress
 * 
 * @project        example.com
 * @author         Matthew White <me@kaishi.ro>
@@ -15,25 +15,76 @@
 /**
 * Block Styling (Mobile)
 */
-.progress-bar {
-  width:100%;
-  height:20px;
-  background:$progress-bar-bg-color;
-  @include border-radius(4px);
-  overflow:hidden;
-  .progress-bar__fill {
-    height:20px;
-    background:$progress-bar-color;
+.progress {
+  display:block;
+  .progress__info {
+    @include adjust-font-size-to(15px);
+  }
+  .progress__remaining {
+  }
+  .progress__donors {
+    &:before {
+      content:' | ';
+    }
+  }
+  .progress__meter {
+    margin-top:10px
   }
 }
 
+.progress--tile {
+  .progress__info {
+    text-align:center;
+  }
+}
+
+.progress--profile {
+  .progress__info {
+    margin-top:10px;
+  }
+  .progress__percent {
+    width:50%;
+    display:block;
+    float:left;
+    font-weight:bold;
+    @include adjust-font-size-to(28px);
+    &:after {
+      position:relative;
+      left:10px;
+      bottom:4px;
+      font-size:16px;
+      content:'Funded';
+      text-transform:uppercase;
+      text-decoration:underline;
+    }
+  }
+  .progress__remaining {
+    width:50%;
+    display:block;
+    float:left;
+    font-weight:bold;
+    @include adjust-font-size-to(28px);
+    &:after {
+      content:'To Go';
+      position:relative;
+      left:10px;
+      bottom:4px;
+      font-size:16px;
+      text-transform:uppercase;
+      text-decoration:underline;
+    }
+  }
+  .progress__donors {
+    display:none;
+  }
+}
 
 /**
 * Block Styling (Tablet)
 */
 @media screen and (min-width: $width-tablet) {
 
-  .progress-bar {
+  .progress {
   }
 
 }
@@ -43,7 +94,22 @@
 */
 @media screen and (min-width: $width-desktop) {
 
-  .progress-bar {
+  .progress {
+  }
+
+  .progress--profile {
+    .progress__percent {
+      @include adjust-font-size-to(38px);
+      &:after {
+        bottom:8px;
+      }
+    }
+    .progress__remaining {
+      @include adjust-font-size-to(38px);
+      &:after {
+        bottom:8px;
+      }
+    }
   }
 
 }
@@ -53,7 +119,7 @@
 */
 @media screen and (min-width: $width-xl) {
 
-  .progress-bar {
+  .progress {
   }
 
 }
